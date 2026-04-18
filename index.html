@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO PRIMÁRIO ═══ -->
+  <title>IAhoje — O portal brasileiro de inteligência artificial</title>
+  <meta name="description" content="Comparativos, tutoriais, novidades e as melhores ferramentas de inteligência artificial em português. Tudo que você precisa saber sobre IA — sem papo técnico desnecessário." />
+  <meta name="keywords" content="inteligência artificial, IA, ChatGPT, Gemini, Claude, ferramentas de IA, comparativo IA, IA em português, inteligência artificial 2026, melhores IAs, IA para trabalho, IA para estudar" />
+  <meta name="author" content="Redação IAhoje" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://iahoje.ia.br/" />
+  <meta name="language" content="pt-BR" />
+  <meta name="revisit-after" content="3 days" />
+  <meta name="rating" content="general" />
+
+  <!-- ═══ OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="IAhoje" />
+  <meta property="og:title" content="IAhoje — O portal brasileiro de inteligência artificial" />
+  <meta property="og:description" content="Comparativos reais, tutoriais práticos e as melhores ferramentas de IA em português. Fique à frente com a IAhoje." />
+  <meta property="og:url" content="https://iahoje.ia.br/" />
+  <meta property="og:image" content="https://iahoje.ia.br/assets/og-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="IAhoje — Portal de Inteligência Artificial em Português" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- ═══ TWITTER / X CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@iahoje" />
+  <meta name="twitter:title" content="IAhoje — O portal brasileiro de inteligência artificial" />
+  <meta name="twitter:description" content="Comparativos reais, tutoriais práticos e as melhores ferramentas de IA em português." />
+  <meta name="twitter:image" content="https://iahoje.ia.br/assets/og-home.png" />
+
+  <!-- ═══ SCHEMA.ORG — WEBSITE ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "IAhoje",
+    "url": "https://iahoje.ia.br",
+    "description": "Portal brasileiro de inteligência artificial com comparativos, tutoriais e novidades em português.",
+    "inLanguage": "pt-BR",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://iahoje.ia.br/busca?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "IAhoje",
+      "url": "https://iahoje.ia.br",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://iahoje.ia.br/assets/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- ═══ SCHEMA.ORG — SITELINKS SEARCHBOX ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IAhoje",
+    "url": "https://iahoje.ia.br",
+    "sameAs": [
+      "https://twitter.com/iahoje",
+      "https://instagram.com/iahoje",
+      "https://youtube.com/@iahoje"
+    ]
+  }
+  </script>
+
+  <!-- ═══ PERFORMANCE ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0a0a0f;
+      --bg2:       #0f0f18;
+      --bg3:       #16161f;
+      --surface:   #1a1a26;
+      --border:    #252535;
+      --text:      #e8e8f0;
+      --muted:     #7070a0;
+      --accent:    #00e5ff;
+      --accent2:   #bf5fff;
+      --accent3:   #ff6b35;
+      --green:     #00ff88;
+      --font-head: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-mono: 'DM Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ─── NOISE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 9999; opacity: .4;
+    }
+
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+    /* ─── HEADER ─── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,15,.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 1280px; margin: 0 auto;
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+
+    .logo {
+      font-family: var(--font-head);
+      font-size: 1.5rem; font-weight: 800;
+      color: var(--text); text-decoration: none;
+      display: flex; align-items: center; gap: .5rem;
+      letter-spacing: -.02em;
+    }
+
+    .logo-badge {
+      background: var(--accent);
+      color: #000;
+      font-size: .55rem; font-weight: 700;
+      padding: 2px 6px; border-radius: 3px;
+      font-family: var(--font-mono);
+      letter-spacing: .08em;
+    }
+
+    nav { display: flex; gap: .25rem; }
+
+    nav a {
+      color: var(--muted); text-decoration: none;
+      font-size: .85rem; font-weight: 500;
+      padding: .4rem .75rem; border-radius: 6px;
+      transition: color .2s, background .2s;
+    }
+
+    nav a:hover { color: var(--text); background: var(--surface); }
+    nav a.active { color: var(--accent); }
+
+    .header-cta {
+      background: var(--accent);
+      color: #000; border: none;
+      font-family: var(--font-body); font-size: .8rem; font-weight: 600;
+      padding: .45rem 1rem; border-radius: 6px; cursor: pointer;
+      transition: opacity .2s, transform .15s;
+      text-decoration: none;
+    }
+    .header-cta:hover { opacity: .85; transform: translateY(-1px); }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      padding: 5rem 2rem 4rem;
+      overflow: hidden;
+      max-width: 1280px; margin: 0 auto;
+    }
+
+    .hero-glow {
+      position: absolute; top: -100px; left: 50%;
+      transform: translateX(-50%);
+      width: 800px; height: 400px;
+      background: radial-gradient(ellipse at center, rgba(0,229,255,.08) 0%, rgba(191,95,255,.05) 40%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--font-mono); font-size: .75rem;
+      color: var(--accent); border: 1px solid rgba(0,229,255,.3);
+      padding: .3rem .8rem; border-radius: 100px;
+      margin-bottom: 1.5rem;
+      animation: fadeUp .6s ease both;
+    }
+
+    .hero-tag::before {
+      content: ''; width: 6px; height: 6px;
+      background: var(--accent); border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .4; transform: scale(.7); }
+    }
+
+    .hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 800;
+      line-height: 1.0;
+      letter-spacing: -.04em;
+      max-width: 800px;
+      animation: fadeUp .6s .1s ease both;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem; color: var(--muted); font-weight: 300;
+      max-width: 520px; margin-top: 1.2rem;
+      animation: fadeUp .6s .2s ease both;
+    }
+
+    .hero-actions {
+      display: flex; gap: 1rem; align-items: center;
+      margin-top: 2rem;
+      animation: fadeUp .6s .3s ease both;
+    }
+
+    .btn-primary {
+      background: var(--accent); color: #000;
+      font-family: var(--font-body); font-weight: 600; font-size: .9rem;
+      padding: .7rem 1.5rem; border-radius: 8px;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: transform .15s, box-shadow .2s;
+      box-shadow: 0 0 20px rgba(0,229,255,.25);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 30px rgba(0,229,255,.4); }
+
+    .btn-ghost {
+      color: var(--text); font-size: .9rem; font-weight: 500;
+      text-decoration: none; display: flex; align-items: center; gap: .4rem;
+      opacity: .7; transition: opacity .2s;
+    }
+    .btn-ghost:hover { opacity: 1; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── TICKER ─── */
+    .ticker-wrap {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg2);
+      overflow: hidden; padding: .6rem 0;
+    }
+
+    .ticker-inner {
+      display: flex; gap: 3rem;
+      animation: ticker 30s linear infinite;
+      white-space: nowrap;
+    }
+
+    .ticker-item {
+      font-family: var(--font-mono); font-size: .75rem;
+      color: var(--muted); display: flex; align-items: center; gap: .5rem;
+    }
+
+    .ticker-item span { color: var(--accent); }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ─── FEATURED ─── */
+    .section { max-width: 1280px; margin: 0 auto; padding: 3rem 2rem; }
+
+    .section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1.75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-head); font-size: 1rem; font-weight: 700;
+      color: var(--muted); text-transform: uppercase; letter-spacing: .1em;
+      display: flex; align-items: center; gap: .6rem;
+    }
+
+    .section-title::before {
+      content: ''; display: block;
+      width: 20px; height: 2px; background: var(--accent);
+    }
+
+    .see-all {
+      font-size: .8rem; color: var(--accent); text-decoration: none;
+      font-family: var(--font-mono);
+      opacity: .8; transition: opacity .2s;
+    }
+    .see-all:hover { opacity: 1; }
+
+    /* ─── FEATURED GRID ─── */
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1.5px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .card {
+      background: var(--bg2);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .card:hover { background: var(--bg3); }
+
+    .card-main {
+      grid-row: 1 / 3;
+      padding: 2.5rem;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      min-height: 420px;
+    }
+
+    .card-main::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(0,229,255,.06) 0%, rgba(191,95,255,.04) 100%);
+    }
+
+    .card-main .card-img-placeholder {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #0d1a2e 0%, #1a0d2e 50%, #0d0d1a 100%);
+    }
+
+    .card-img-placeholder { z-index: 0; }
+
+    .card-img-placeholder .grid-lines {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .card-img-placeholder .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+    .orb-1 { width: 300px; height: 300px; background: rgba(0,229,255,.12); top: -50px; right: -50px; }
+    .orb-2 { width: 200px; height: 200px; background: rgba(191,95,255,.1); bottom: 20px; left: 30px; }
+
+    .card-content { position: relative; z-index: 1; }
+
+    .card-category {
+      font-family: var(--font-mono); font-size: .7rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--accent); margin-bottom: .6rem;
+    }
+
+    .card-title {
+      font-family: var(--font-head); font-weight: 700;
+      line-height: 1.15; letter-spacing: -.02em;
+    }
+
+    .card-main .card-title { font-size: clamp(1.4rem, 2.5vw, 2rem); color: #fff; }
+    .card .card-title { font-size: 1.05rem; color: var(--text); }
+
+    .card-meta {
+      display: flex; align-items: center; gap: .75rem;
+      margin-top: .8rem; font-size: .75rem; color: var(--muted);
+      font-family: var(--font-mono);
+    }
+
+    .card-meta .dot { width: 3px; height: 3px; background: var(--muted); border-radius: 50%; }
+
+    .read-time {
+      background: rgba(0,229,255,.1); color: var(--accent);
+      font-size: .65rem; padding: 2px 8px; border-radius: 100px;
+      font-family: var(--font-mono);
+    }
+
+    .card-excerpt { font-size: .875rem; color: var(--muted); margin-top: .6rem; line-height: 1.55; }
+
+    .card-tag {
+      display: inline-block;
+      background: var(--surface); color: var(--muted);
+      font-size: .65rem; font-family: var(--font-mono);
+      padding: 3px 8px; border-radius: 4px; margin-right: .3rem; margin-top: .5rem;
+      border: 1px solid var(--border);
+    }
+
+    /* ─── TOPICS BAR ─── */
+    .topics {
+      max-width: 1280px; margin: 0 auto; padding: 0 2rem 2rem;
+      display: flex; gap: .6rem; flex-wrap: wrap;
+    }
+
+    .topic-pill {
+      background: var(--surface); color: var(--muted);
+      font-size: .8rem; font-weight: 500;
+      padding: .4rem 1rem; border-radius: 100px;
+      border: 1px solid var(--border);
+      text-decoration: none; cursor: pointer;
+      transition: border-color .2s, color .2s, background .2s;
+    }
+    .topic-pill:hover, .topic-pill.active {
+      border-color: var(--accent); color: var(--accent);
+      background: rgba(0,229,255,.06);
+    }
+
+    /* ─── ARTICLE LIST ─── */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .article-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden;
+      transition: border-color .2s, transform .2s;
+      cursor: pointer; text-decoration: none; display: block;
+    }
+
+    .article-card:hover {
+      border-color: rgba(0,229,255,.3);
+      transform: translateY(-3px);
+    }
+
+    .article-thumb {
+      height: 160px; position: relative; overflow: hidden;
+    }
+
+    .thumb-gradient {
+      position: absolute; inset: 0;
+    }
+
+    .thumb-1 { background: linear-gradient(135deg, #071a2e, #1a071a); }
+    .thumb-2 { background: linear-gradient(135deg, #0d1a0d, #1a1a07); }
+    .thumb-3 { background: linear-gradient(135deg, #1a070d, #070d1a); }
+    .thumb-4 { background: linear-gradient(135deg, #071a1a, #1a0707); }
+    .thumb-5 { background: linear-gradient(135deg, #120718, #071218); }
+    .thumb-6 { background: linear-gradient(135deg, #181207, #071818); }
+
+    .thumb-icon {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem; opacity: .4;
+    }
+
+    .article-body { padding: 1.25rem; }
+    .article-body .card-category { margin-bottom: .4rem; }
+    .article-body .card-title { font-size: .95rem; }
+    .article-body .card-meta { margin-top: .6rem; }
+
+    /* ─── COMPARISON TABLE ─── */
+    .compare-wrap {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+    }
+
+    .compare-header {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .compare-header h3 {
+      font-family: var(--font-head); font-size: 1.1rem; font-weight: 700;
+    }
+
+    .compare-table { width: 100%; border-collapse: collapse; }
+
+    .compare-table th {
+      font-family: var(--font-mono); font-size: .7rem;
+      text-transform: uppercase; letter-spacing: .08em;
+      color: var(--muted); padding: .9rem 1.5rem;
+      text-align: left; border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .compare-table th:first-child { color: var(--text); }
+
+    .compare-table td {
+      padding: .9rem 1.5rem;
+      font-size: .85rem; border-bottom: 1px solid rgba(37,37,53,.5);
+      vertical-align: middle;
+    }
+
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:hover td { background: rgba(255,255,255,.02); }
+
+    .ai-name {
+      font-family: var(--font-head); font-weight: 700; font-size: .95rem;
+      display: flex; align-items: center; gap: .6rem;
+    }
+
+    .ai-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    .score-bar-wrap { display: flex; align-items: center; gap: .7rem; }
+    .score-bar {
+      flex: 1; height: 4px; background: var(--surface); border-radius: 2px; overflow: hidden;
+    }
+    .score-fill { height: 100%; border-radius: 2px; transition: width .8s ease; }
+    .score-num { font-family: var(--font-mono); font-size: .75rem; color: var(--muted); min-width: 28px; }
+
+    .badge {
+      font-size: .65rem; font-family: var(--font-mono);
+      padding: 2px 7px; border-radius: 100px; font-weight: 500;
+    }
+    .badge-green  { background: rgba(0,255,136,.1); color: var(--green); }
+    .badge-blue   { background: rgba(0,229,255,.1); color: var(--accent); }
+    .badge-purple { background: rgba(191,95,255,.1); color: var(--accent2); }
+    .badge-orange { background: rgba(255,107,53,.1); color: var(--accent3); }
+
+    /* ─── NEWSLETTER ─── */
+    .newsletter {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem;
+      position: relative; overflow: hidden;
+    }
+
+    .newsletter::before {
+      content: '';
+      position: absolute; top: -60px; right: -60px;
+      width: 250px; height: 250px;
+      background: radial-gradient(circle, rgba(0,229,255,.07), transparent 70%);
+      pointer-events: none;
+    }
+
+    .newsletter h3 {
+      font-family: var(--font-head); font-size: 1.4rem; font-weight: 800;
+      letter-spacing: -.02em; margin-bottom: .5rem;
+    }
+
+    .newsletter p { color: var(--muted); font-size: .9rem; margin-bottom: 1.5rem; }
+
+    .nl-form { display: flex; gap: .6rem; max-width: 440px; }
+
+    .nl-input {
+      flex: 1; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: .7rem 1rem;
+      color: var(--text); font-family: var(--font-body); font-size: .875rem;
+      outline: none; transition: border-color .2s;
+    }
+    .nl-input::placeholder { color: var(--muted); }
+    .nl-input:focus { border-color: var(--accent); }
+
+    .nl-btn {
+      background: var(--accent); color: #000;
+      border: none; border-radius: 8px;
+      font-family: var(--font-body); font-size: .875rem; font-weight: 600;
+      padding: .7rem 1.25rem; cursor: pointer;
+      transition: transform .15s, box-shadow .2s;
+      white-space: nowrap;
+    }
+    .nl-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,229,255,.3); }
+
+    .nl-disclaimer { font-size: .72rem; color: var(--muted); margin-top: .75rem; opacity: .6; }
+
+    /* ─── IA DA SEMANA ─── */
+    .week-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+    }
+
+    .week-header {
+      background: linear-gradient(135deg, rgba(0,229,255,.08), rgba(191,95,255,.06));
+      padding: 1.5rem; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 1rem;
+    }
+
+    .week-icon {
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; flex-shrink: 0;
+    }
+
+    .week-label {
+      font-family: var(--font-mono); font-size: .7rem;
+      color: var(--accent); text-transform: uppercase; letter-spacing: .1em;
+    }
+
+    .week-name {
+      font-family: var(--font-head); font-size: 1.2rem; font-weight: 700;
+    }
+
+    .week-body { padding: 1.5rem; }
+    .week-body p { font-size: .875rem; color: var(--muted); line-height: 1.65; }
+
+    .week-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border);
+      margin-top: 1.5rem; border-radius: 8px; overflow: hidden;
+    }
+
+    .week-stat {
+      background: var(--surface); padding: 1rem;
+      text-align: center;
+    }
+
+    .week-stat .val {
+      font-family: var(--font-head); font-size: 1.4rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .week-stat .lbl { font-size: .72rem; color: var(--muted); margin-top: .2rem; }
+
+    /* ─── SIDEBAR ─── */
+    .two-col {
+      display: grid; grid-template-columns: 1fr 320px; gap: 2rem;
+      align-items: start;
+    }
+
+    .sidebar-widget {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.25rem; margin-bottom: 1.25rem;
+    }
+
+    .widget-title {
+      font-family: var(--font-head); font-size: .8rem; font-weight: 700;
+      color: var(--muted); text-transform: uppercase; letter-spacing: .1em;
+      margin-bottom: 1rem; padding-bottom: .75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trending-item {
+      display: flex; gap: .75rem; align-items: flex-start;
+      padding: .6rem 0; border-bottom: 1px solid rgba(37,37,53,.5);
+    }
+    .trending-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .trending-num {
+      font-family: var(--font-mono); font-size: .75rem;
+      color: var(--accent); font-weight: 500; flex-shrink: 0;
+      width: 20px;
+    }
+
+    .trending-text { font-size: .825rem; line-height: 1.4; }
+    .trending-text a { color: var(--text); text-decoration: none; }
+    .trending-text a:hover { color: var(--accent); }
+    .trending-cat { font-size: .7rem; color: var(--muted); margin-top: .2rem; font-family: var(--font-mono); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--bg2);
+      margin-top: 4rem;
+    }
+
+    .footer-inner {
+      max-width: 1280px; margin: 0 auto;
+      padding: 3rem 2rem 2rem;
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .footer-brand .logo { font-size: 1.3rem; margin-bottom: .75rem; }
+    .footer-brand p { font-size: .825rem; color: var(--muted); line-height: 1.6; }
+
+    .footer-col h4 {
+      font-family: var(--font-head); font-size: .8rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .08em;
+      color: var(--muted); margin-bottom: .9rem;
+    }
+
+    .footer-col a {
+      display: block; color: var(--muted); text-decoration: none;
+      font-size: .825rem; margin-bottom: .45rem;
+      transition: color .2s;
+    }
+    .footer-col a:hover { color: var(--accent); }
+
+    .footer-bottom {
+      max-width: 1280px; margin: 0 auto;
+      padding: 1.25rem 2rem;
+      border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: .75rem; color: var(--muted);
+      font-family: var(--font-mono);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .featured-grid { grid-template-columns: 1fr; }
+      .card-main { grid-row: auto; min-height: 300px; }
+      .articles-grid { grid-template-columns: 1fr 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      nav { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .articles-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .nl-form { flex-direction: column; }
+      .hero h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      IAhoje
+      <span class="logo-badge">BETA</span>
+    </a>
+    <nav>
+      <a href="#" class="active">Início</a>
+      <a href="#">Comparativos</a>
+      <a href="#">Tutoriais</a>
+      <a href="#">Ferramentas</a>
+      <a href="#">Notícias</a>
+      <a href="#">Sobre</a>
+    </nav>
+    <a href="#newsletter" class="header-cta">Newsletter grátis</a>
+  </div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-item"><span>NOVO</span> GPT-5 anunciado pela OpenAI</div>
+    <div class="ticker-item"><span>DESTAQUE</span> Gemini 2.5 supera benchmarks de raciocínio</div>
+    <div class="ticker-item"><span>GUIA</span> Como usar IA para triplicar sua produtividade</div>
+    <div class="ticker-item"><span>COMPARATIVO</span> Claude vs ChatGPT — análise completa</div>
+    <div class="ticker-item"><span>FERRAMENTA</span> Midjourney v7 disponível para todos</div>
+    <div class="ticker-item"><span>TENDÊNCIA</span> Agentes de IA dominam 2025</div>
+    <div class="ticker-item"><span>NOVO</span> GPT-5 anunciado pela OpenAI</div>
+    <div class="ticker-item"><span>DESTAQUE</span> Gemini 2.5 supera benchmarks de raciocínio</div>
+    <div class="ticker-item"><span>GUIA</span> Como usar IA para triplicar sua produtividade</div>
+    <div class="ticker-item"><span>COMPARATIVO</span> Claude vs ChatGPT — análise completa</div>
+    <div class="ticker-item"><span>FERRAMENTA</span> Midjourney v7 disponível para todos</div>
+    <div class="ticker-item"><span>TENDÊNCIA</span> Agentes de IA dominam 2025</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-tag">Atualizado hoje</div>
+  <h1>Inteligência<br>artificial <em>sem filtro</em></h1>
+  <p class="hero-sub">Comparativos reais, tendências, tutoriais práticos e as melhores ferramentas de IA — tudo em português.</p>
+  <div class="hero-actions">
+    <a href="#destaques" class="btn-primary">Ver destaques</a>
+    <a href="#comparativos" class="btn-ghost">
+      Comparativos →
+    </a>
+  </div>
+</div>
+
+<!-- TOPICS -->
+<div class="topics">
+  <a href="#" class="topic-pill active">Todos</a>
+  <a href="#" class="topic-pill">ChatGPT</a>
+  <a href="#" class="topic-pill">Gemini</a>
+  <a href="#" class="topic-pill">Claude</a>
+  <a href="#" class="topic-pill">Imagens</a>
+  <a href="#" class="topic-pill">Código</a>
+  <a href="#" class="topic-pill">Produtividade</a>
+  <a href="#" class="topic-pill">Agentes</a>
+  <a href="#" class="topic-pill">Open Source</a>
+  <a href="#" class="topic-pill">Empresas</a>
+</div>
+
+<!-- FEATURED -->
+<section class="section" id="destaques">
+  <div class="section-header">
+    <div class="section-title">Em destaque</div>
+    <a href="#" class="see-all">ver todos →</a>
+  </div>
+  <div class="featured-grid">
+
+    <!-- Main card -->
+    <a href="artigo.html" class="card card-main" style="text-decoration:none;">
+      <div class="card-img-placeholder">
+        <div class="grid-lines"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+      <div class="card-content">
+        <div class="card-category">Comparativo</div>
+        <h2 class="card-title">ChatGPT vs Gemini vs Claude: qual IA domina em 2026?</h2>
+        <p class="card-excerpt">Testamos as três maiores IAs do mercado durante 30 dias em tarefas reais. O resultado surpreendeu até nós.</p>
+        <div class="card-meta">
+          <span>Redação IAhoje</span>
+          <span class="dot"></span>
+          <span>17 abr 2026</span>
+          <span class="read-time">8 min</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Side cards -->
+    <a href="artigo.html" class="card" style="text-decoration:none;">
+      <div class="card-category">Tutorial</div>
+      <h3 class="card-title">Como criar imagens profissionais com IA em 5 minutos</h3>
+      <div class="card-meta">
+        <span>17 abr 2026</span>
+        <span class="read-time">5 min</span>
+      </div>
+      <p class="card-excerpt">Guia passo a passo com Midjourney, DALL·E e Stable Diffusion.</p>
+    </a>
+
+    <a href="artigo.html" class="card" style="text-decoration:none;">
+      <div class="card-category">Tendência</div>
+      <h3 class="card-title">Agentes de IA: a próxima revolução já começou</h3>
+      <div class="card-meta">
+        <span>16 abr 2026</span>
+        <span class="read-time">6 min</span>
+      </div>
+      <p class="card-excerpt">O que são, como funcionam e por que vão mudar tudo nos próximos 12 meses.</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- DOIS COLUNAS: ARTIGOS + SIDEBAR -->
+<section class="section">
+  <div class="two-col">
+
+    <!-- MAIN CONTENT -->
+    <div>
+
+      <!-- ARTIGOS RECENTES -->
+      <div class="section-header">
+        <div class="section-title">Mais recentes</div>
+        <a href="#" class="see-all">ver todos →</a>
+      </div>
+      <div class="articles-grid" style="margin-bottom:3rem;">
+
+        <a href="artigo.html" class="article-card">
+          <div class="article-thumb"><div class="thumb-gradient thumb-1"></div><div class="thumb-icon">🤖</div></div>
+          <div class="article-body">
+            <div class="card-category">Ferramentas</div>
+            <h3 class="card-title">10 IAs gratuitas que você precisa testar agora</h3>
+            <div class="card-meta">
+              <span>15 abr</span><span class="dot"></span>
+              <span class="read-time">7 min</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="artigo.html" class="article-card">
+          <div class="article-thumb"><div class="thumb-gradient thumb-2"></div><div class="thumb-icon">✍️</div></div>
+          <div class="article-body">
+            <div class="card-category">Produtividade</div>
+            <h3 class="card-title">IA para redação: como escrever 3x mais rápido</h3>
+            <div class="card-meta">
+              <span>14 abr</span><span class="dot"></span>
+              <span class="read-time">5 min</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="artigo.html" class="article-card">
+          <div class="article-thumb"><div class="thumb-gradient thumb-3"></div><div class="thumb-icon">💼</div></div>
+          <div class="article-body">
+            <div class="card-category">Negócios</div>
+            <h3 class="card-title">Como pequenas empresas estão usando IA para crescer</h3>
+            <div class="card-meta">
+              <span>13 abr</span><span class="dot"></span>
+              <span class="read-time">6 min</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="artigo.html" class="article-card">
+          <div class="article-thumb"><div class="thumb-gradient thumb-4"></div><div class="thumb-icon">🎨</div></div>
+          <div class="article-body">
+            <div class="card-category">Design</div>
+            <h3 class="card-title">Melhores IAs para design gráfico em 2026</h3>
+            <div class="card-meta">
+              <span>12 abr</span><span class="dot"></span>
+              <span class="read-time">4 min</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="artigo.html" class="article-card">
+          <div class="article-thumb"><div class="thumb-gradient thumb-5"></div><div class="thumb-icon">🎓</div></div>
+          <div class="article-body">
+            <div class="card-category">Educação</div>
+            <h3 class="card-title">IA para estudar: do TCC à prova concurso</h3>
+            <div class="card-meta">
+              <span>11 abr</span><span class="dot"></span>
+              <span class="read-time">5 min</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="artigo.html" class="article-card">
+          <div class="article-thumb"><div class="thumb-gradient thumb-6"></div><div class="thumb-icon">⚡</div></div>
+          <div class="article-body">
+            <div class="card-category">Tutorial</div>
+            <h3 class="card-title">Prompt engineering: o guia completo em português</h3>
+            <div class="card-meta">
+              <span>10 abr</span><span class="dot"></span>
+              <span class="read-time">10 min</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- COMPARATIVO TABLE -->
+      <div class="section-header" id="comparativos">
+        <div class="section-title">Comparativo rápido</div>
+        <a href="artigo.html" class="see-all">análise completa →</a>
+      </div>
+      <div class="compare-wrap">
+        <div class="compare-header">
+          <h3>As maiores IAs de texto — Abril 2026</h3>
+          <span class="badge badge-blue">Atualizado</span>
+        </div>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Raciocínio</th>
+              <th>Criatividade</th>
+              <th>Velocidade</th>
+              <th>Gratuito?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="ai-name"><div class="ai-dot" style="background:#10a37f"></div>ChatGPT 4o</div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:88%;background:linear-gradient(90deg,#10a37f,#00e5ff)"></div></div><span class="score-num">88</span></div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:90%;background:linear-gradient(90deg,#10a37f,#00e5ff)"></div></div><span class="score-num">90</span></div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:82%;background:linear-gradient(90deg,#10a37f,#00e5ff)"></div></div><span class="score-num">82</span></div></td>
+              <td><span class="badge badge-green">Sim</span></td>
+            </tr>
+            <tr>
+              <td><div class="ai-name"><div class="ai-dot" style="background:#4285f4"></div>Gemini 2.5</div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:92%;background:linear-gradient(90deg,#4285f4,#bf5fff)"></div></div><span class="score-num">92</span></div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:85%;background:linear-gradient(90deg,#4285f4,#bf5fff)"></div></div><span class="score-num">85</span></div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:88%;background:linear-gradient(90deg,#4285f4,#bf5fff)"></div></div><span class="score-num">88</span></div></td>
+              <td><span class="badge badge-green">Sim</span></td>
+            </tr>
+            <tr>
+              <td><div class="ai-name"><div class="ai-dot" style="background:#cc785c"></div>Claude 3.7</div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:95%;background:linear-gradient(90deg,#cc785c,#ff6b35)"></div></div><span class="score-num">95</span></div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:93%;background:linear-gradient(90deg,#cc785c,#ff6b35)"></div></div><span class="score-num">93</span></div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:75%;background:linear-gradient(90deg,#cc785c,#ff6b35)"></div></div><span class="score-num">75</span></div></td>
+              <td><span class="badge badge-orange">Limitado</span></td>
+            </tr>
+            <tr>
+              <td><div class="ai-name"><div class="ai-dot" style="background:#bf5fff"></div>Grok 3</div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:86%;background:linear-gradient(90deg,#bf5fff,#00e5ff)"></div></div><span class="score-num">86</span></div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:88%;background:linear-gradient(90deg,#bf5fff,#00e5ff)"></div></div><span class="score-num">88</span></div></td>
+              <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-fill" style="width:91%;background:linear-gradient(90deg,#bf5fff,#00e5ff)"></div></div><span class="score-num">91</span></div></td>
+              <td><span class="badge badge-purple">X Premium</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside>
+
+      <!-- IA DA SEMANA -->
+      <div class="week-card" style="margin-bottom:1.25rem;">
+        <div class="week-header">
+          <div class="week-icon">✨</div>
+          <div>
+            <div class="week-label">IA da semana</div>
+            <div class="week-name">Gemini 2.5 Pro</div>
+          </div>
+        </div>
+        <div class="week-body">
+          <p>O novo Gemini 2.5 Pro da Google surpreendeu com raciocínio avançado e janela de contexto de 1 milhão de tokens. Ideal para análise de documentos longos.</p>
+          <div class="week-stats">
+            <div class="week-stat"><div class="val">1M</div><div class="lbl">tokens ctx</div></div>
+            <div class="week-stat"><div class="val">#1</div><div class="lbl">Lmarena</div></div>
+            <div class="week-stat"><div class="val">Free</div><div class="lbl">plano básico</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRENDING -->
+      <div class="sidebar-widget">
+        <div class="widget-title">Em alta agora</div>
+        <div class="trending-item">
+          <span class="trending-num">01</span>
+          <div class="trending-text">
+            <a href="artigo.html">ChatGPT vs Gemini: qual é melhor para o trabalho?</a>
+            <div class="trending-cat">Comparativo</div>
+          </div>
+        </div>
+        <div class="trending-item">
+          <span class="trending-num">02</span>
+          <div class="trending-text">
+            <a href="artigo.html">Os melhores prompts para criar imagens realistas</a>
+            <div class="trending-cat">Tutorial</div>
+          </div>
+        </div>
+        <div class="trending-item">
+          <span class="trending-num">03</span>
+          <div class="trending-text">
+            <a href="artigo.html">IA vai substituir desenvolvedores em 2026?</a>
+            <div class="trending-cat">Opinião</div>
+          </div>
+        </div>
+        <div class="trending-item">
+          <span class="trending-num">04</span>
+          <div class="trending-text">
+            <a href="artigo.html">Como o Claude funciona por dentro</a>
+            <div class="trending-cat">Explicativo</div>
+          </div>
+        </div>
+        <div class="trending-item">
+          <span class="trending-num">05</span>
+          <div class="trending-text">
+            <a href="artigo.html">Ferramentas de IA para freelancers em 2026</a>
+            <div class="trending-cat">Ferramentas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAGS -->
+      <div class="sidebar-widget">
+        <div class="widget-title">Explorar por tema</div>
+        <div>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">ChatGPT</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Gemini</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Claude</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Imagens</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Vídeo</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Código</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Agentes</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Open Source</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Negócios</a>
+          <a href="#" class="topic-pill" style="margin:.2rem .2rem .2rem 0;display:inline-block;">Educação</a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section" id="newsletter">
+  <div class="newsletter">
+    <h3>Fique à frente com a IAhoje</h3>
+    <p>Uma newsletter semanal com o que realmente importa em inteligência artificial — sem spam, sem enrolação.</p>
+    <div class="nl-form">
+      <input class="nl-input" type="email" placeholder="seu@email.com" />
+      <button class="nl-btn">Quero receber</button>
+    </div>
+    <p class="nl-disclaimer">Gratuito. Cancele quando quiser. Sem spam.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">IAhoje <span class="logo-badge">BETA</span></a>
+      <p>O portal brasileiro de inteligência artificial. Comparativos, tutoriais e novidades em português, sem papo técnico desnecessário.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Conteúdo</h4>
+      <a href="#">Comparativos</a>
+      <a href="#">Tutoriais</a>
+      <a href="#">Ferramentas</a>
+      <a href="#">Notícias</a>
+      <a href="#">IA da Semana</a>
+    </div>
+    <div class="footer-col">
+      <h4>IAs</h4>
+      <a href="#">ChatGPT</a>
+      <a href="#">Gemini</a>
+      <a href="#">Claude</a>
+      <a href="#">Grok</a>
+      <a href="#">Open Source</a>
+    </div>
+    <div class="footer-col">
+      <h4>IAhoje</h4>
+      <a href="#">Sobre</a>
+      <a href="#">Newsletter</a>
+      <a href="#">Anuncie</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 IAhoje.ia.br — Todos os direitos reservados</span>
+    <span>Feito com IA, curado por humanos</span>
+  </div>
+</footer>
+
+</body>
+</html>
