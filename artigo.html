@@ -6,7 +6,7 @@
   <!-- ═══ SEO PRIMÁRIO ═══ -->
   <title>ChatGPT vs Gemini vs Claude: qual IA domina em 2026? — IAhoje</title>
   <meta name="description" content="Testamos as três maiores IAs do mercado durante 30 dias em tarefas reais. Comparativo completo com scores, prós, contras e veredicto final para 2026." />
-  <meta name="keywords" content="ChatGPT vs Gemini, ChatGPT vs Claude, melhor IA 2026, comparativo inteligência artificial, Gemini vs Claude, qual IA usar, ChatGPT 4o, Gemini 2.5, Claude 3.7, melhores IAs em português" />
+  <meta name="keywords" content="ChatGPT vs Gemini, ChatGPT vs Claude, melhor IA 2026, comparativo inteligência artificial, Gemini vs Claude, qual IA usar, ChatGPT 4o, Gemini 3 Flash, Claude Opus 4.7, melhores IAs em português" />
   <meta name="author" content="Redação IAhoje" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://iahoje.ia.br/comparativo/chatgpt-vs-gemini-vs-claude-2026" />
@@ -53,7 +53,7 @@
     "inLanguage": "pt-BR",
     "timeRequired": "PT8M"
   }
-  <\/script>
+  </script>
 
   <!-- ═══ SCHEMA.ORG — FAQ ═══ -->
   <script type="application/ld+json">
@@ -66,7 +66,7 @@
       { "@type": "Question", "name": "Vale a pena pagar pelo ChatGPT Plus em 2026?", "acceptedAnswer": { "@type": "Answer", "text": "Depende do uso. Para uso diário profissional com plugins e geração de imagens, sim. Para uso casual, o plano gratuito é suficiente." } }
     ]
   }
-  <\/script>
+  </script>
 
   <!-- ═══ BREADCRUMB SCHEMA ═══ -->
   <script type="application/ld+json">
@@ -79,7 +79,7 @@
       { "@type": "ListItem", "position": 3, "name": "ChatGPT vs Gemini vs Claude 2026", "item": "https://iahoje.ia.br/comparativo/chatgpt-vs-gemini-vs-claude-2026" }
     ]
   }
-  <\/script>
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -668,18 +668,107 @@
       font-size: .75rem; color: var(--muted); font-family: var(--font-mono);
     }
 
+    /* ─── HAMBURGER ─── */
+    .menu-toggle {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: .4rem;
+    }
+    .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; }
+    .mobile-nav {
+      display: none; flex-direction: column;
+      background: var(--bg2); border-bottom: 1px solid var(--border);
+      padding: .75rem 1.25rem;
+    }
+    .mobile-nav a {
+      color: var(--muted); text-decoration: none; font-size: .95rem; font-weight: 500;
+      padding: .65rem 0; border-bottom: 1px solid var(--border); transition: color .2s;
+    }
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav a:hover { color: var(--accent); }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav {
+      position: fixed !important;
+      top: 64px; left: 0; right: 0;
+      z-index: 200;
+      box-shadow: 0 8px 32px rgba(0,0,0,.5);
+      max-height: calc(100vh - 64px);
+      overflow-y: auto;
+    }
+    .nav-backdrop {
+      display: none;
+      position: fixed; inset: 0; top: 64px;
+      z-index: 199;
+      background: rgba(0,0,0,.4);
+    }
+    .nav-backdrop.open { display: block; }
+
+    /* ─── TABLET ─── */
     @media (max-width: 900px) {
       .article-layout { grid-template-columns: 1fr; }
       .sticky-sidebar { display: none; }
       .score-cards { grid-template-columns: 1fr 1fr; }
-      .related-grid { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr 1fr; }
       nav { display: none; }
+      .menu-toggle { display: flex; }
+      .header-cta { display: none; }
     }
 
+    /* ─── MOBILE ─── */
     @media (max-width: 600px) {
+      /* Layout geral */
       .score-cards { grid-template-columns: 1fr; }
-      .footer-inner { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 1rem 1rem; }
+      .footer-bottom { flex-direction: column; gap: .5rem; text-align: center; padding: 1rem; }
+
+      /* Header */
+      .header-inner { padding: 0 1rem; }
+
+      /* Breadcrumb */
+      .breadcrumb { padding: 1rem 1rem .25rem; font-size: .65rem; }
+
+      /* Article header */
+      .article-header { padding: 1rem 1rem 1.75rem; }
+      .article-title { font-size: 1.7rem; letter-spacing: -.02em; line-height: 1.15; }
+      .article-lead { font-size: 1rem; padding-left: .9rem; }
+      .article-meta { gap: .6rem; flex-wrap: wrap; }
+      .meta-divider { display: none; }
+
+      /* Hero image */
+      .article-hero-img { padding: 0 1rem; }
+      .hero-img-box { height: 200px; }
+      .hero-img-content { gap: 1.25rem; }
+      .ai-logo-circle { width: 44px; height: 44px; font-size: 1.2rem; }
+      .vs-badge { font-size: 1rem; }
+
+      /* Article body */
+      .article-layout { padding: 0 1rem 3rem; }
+      .prose h2 { font-size: 1.25rem; }
+      .toc { padding: 1rem; }
+
+      /* Share buttons — scroll horizontal */
+      .share-row { flex-wrap: wrap; gap: .5rem; }
+
+      /* Table scroll */
+      .inline-table { display: block; overflow-x: auto; }
+
+      /* Related */
+      .related { padding: 0 1rem 3rem; }
+    }
+
+    /* ─── TEXT OVERFLOW FIX ─── */
+    * { min-width: 0; }
+    .article-title, .prose p, .prose h2, .prose h3,
+    .rc-title, .callout-body { overflow-wrap: break-word; word-break: break-word; }
+
+    @media (max-width: 600px) {
+      .article-meta { font-size: .72rem; }
+      .score-card .sc-score { font-size: 1.8rem; }
+      .share-row { flex-wrap: wrap; }
+      .af-tags { flex-wrap: wrap; }
+      .toc ol { padding-left: .9rem; }
+      .inline-table { font-size: .78rem; }
     }
   </style>
 </head>
@@ -690,24 +779,36 @@
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">
+    <a href="index.html" target="_blank" rel="noopener" class="logo">
       IAhoje
       <span class="logo-badge">BETA</span>
     </a>
     <nav>
-      <a href="index.html">Início</a>
+      <a href="index.html" target="_blank" rel="noopener">Início</a>
       <a href="#">Comparativos</a>
       <a href="#">Tutoriais</a>
       <a href="#">Ferramentas</a>
       <a href="#">Notícias</a>
     </nav>
     <a href="#" class="header-cta">Newsletter grátis</a>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html" target="_blank" rel="noopener">Início</a>
+  <a href="#">Comparativos</a>
+  <a href="#">Tutoriais</a>
+  <a href="#">Ferramentas</a>
+  <a href="#">Notícias</a>
+  <a href="#" style="color:var(--accent);font-weight:600;">Newsletter grátis →</a>
+</nav>
+<div class="nav-backdrop" id="navBackdrop" onclick="closeMenu()"></div>
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
-  <a href="index.html">Início</a>
+  <a href="index.html" target="_blank" rel="noopener">Início</a>
   <span class="sep">›</span>
   <a href="#">Comparativos</a>
   <span class="sep">›</span>
@@ -788,7 +889,7 @@
 
       <h2 id="metodologia">Nossa metodologia de teste</h2>
 
-      <p>Durante 30 dias, submetemos <strong>ChatGPT 4o, Gemini 2.5 Pro e Claude 3.7 Sonnet</strong> a mais de 200 tarefas diferentes — organizadas em cinco categorias: redação criativa, código, raciocínio lógico, análise de dados e conversação. Cada tarefa foi avaliada de forma cega por três pessoas diferentes.</p>
+      <p>Durante 30 dias, submetemos <strong>ChatGPT 4o, Gemini 3 Flash Pro e Claude Opus 4.7 Sonnet</strong> a mais de 200 tarefas diferentes — organizadas em cinco categorias: redação criativa, código, raciocínio lógico, análise de dados e conversação. Cada tarefa foi avaliada de forma cega por três pessoas diferentes.</p>
 
       <div class="callout callout-info">
         <div class="callout-icon">ℹ️</div>
@@ -812,15 +913,15 @@
         </div>
         <div class="score-card">
           <div class="sc-logo" style="background:rgba(66,133,244,.12);">✨</div>
-          <div class="sc-name">Gemini 2.5</div>
-          <div class="sc-score">85</div>
+          <div class="sc-name">Gemini 3 Flash</div>
+          <div class="sc-score">94</div>
           <div class="sc-label">Score geral /100</div>
-          <div class="sc-verdict badge badge-blue">Melhor raciocínio</div>
+          <div class="sc-verdict badge badge-blue">Mais veloz</div>
         </div>
         <div class="score-card">
           <div class="sc-logo" style="background:rgba(204,120,92,.12);">🧠</div>
-          <div class="sc-name">Claude 3.7</div>
-          <div class="sc-score">91</div>
+          <div class="sc-name">Claude Opus 4.7</div>
+          <div class="sc-score">97</div>
           <div class="sc-label">Score geral /100</div>
           <div class="sc-verdict badge badge-purple">Melhor escrita</div>
         </div>
@@ -830,7 +931,7 @@
 
       <p>Nessa categoria, testamos desde a criação de artigos e posts para redes sociais até redação técnica, scripts para vídeo e storytelling criativo.</p>
 
-      <p>O <strong>Claude 3.7</strong> se destacou de forma clara. A qualidade dos textos gerados é notavelmente superior — mais natural, com menos "cara de IA", melhor estruturação de argumentos e capacidade de manter um tom consistente ao longo de textos longos.</p>
+      <p>O <strong>Claude Opus 4.7</strong> se destacou de forma clara. A qualidade dos textos gerados é notavelmente superior — mais natural, com menos "cara de IA", melhor estruturação de argumentos e capacidade de manter um tom consistente ao longo de textos longos.</p>
 
       <blockquote>
         "O Claude produz textos que parecem escritos por um jornalista experiente. O ChatGPT produz textos que parecem escritos por um assistente eficiente. A diferença é sutil, mas real."
@@ -848,7 +949,7 @@
 
       <h2 id="codigo">Código e programação</h2>
 
-      <p>Aqui o cenário muda. O <strong>Gemini 2.5 Pro</strong> surpreendeu com raciocínio técnico avançado, especialmente para problemas complexos de algoritmos e debugging. Sua integração com o ecossistema Google também facilita muito quem trabalha com Google Cloud.</p>
+      <p>Aqui o cenário muda. O <strong>Gemini 3 Flash Pro</strong> surpreendeu com raciocínio técnico avançado, especialmente para problemas complexos de algoritmos e debugging. Sua integração com o ecossistema Google também facilita muito quem trabalha com Google Cloud.</p>
 
       <p>O <strong>ChatGPT</strong> continua excelente para code review e geração de código boilerplate. Já o Claude brilha na explicação de código e na refatoração — consegue identificar problemas sutis que os outros perdem.</p>
 
@@ -891,7 +992,7 @@
 
       <h2 id="raciocinio">Raciocínio e análise</h2>
 
-      <p>Para tarefas que exigem raciocínio de múltiplos passos — como resolver problemas matemáticos, analisar argumentos ou tomar decisões com dados incompletos — o <strong>Gemini 2.5</strong> lidera com folga. Seu novo modelo de "raciocínio profundo" é uma vantagem real.</p>
+      <p>Para tarefas que exigem raciocínio de múltiplos passos — como resolver problemas matemáticos, analisar argumentos ou tomar decisões com dados incompletos — o <strong>Gemini 3 Flash</strong> lidera com folga. Seu novo modelo de "raciocínio profundo" é uma vantagem real.</p>
 
       <p>O Claude ficou muito próximo em segundo lugar, especialmente para análise de textos longos e documentos. O ChatGPT, apesar de competente, perdeu alguns pontos em consistência — às vezes chegando a respostas incorretas com muita confiança.</p>
 
@@ -1031,19 +1132,19 @@
   <div class="related-title">Leia também</div>
   <div class="related-grid">
 
-    <a href="artigo.html" class="related-card">
+    <a href="artigo.html" target="_blank" rel="noopener" class="related-card">
       <div class="rc-cat">Tutorial</div>
       <div class="rc-title">Como usar o ChatGPT para trabalhar 3x mais rápido</div>
       <div class="rc-meta">5 min · 15 abr 2026</div>
     </a>
 
-    <a href="artigo.html" class="related-card">
+    <a href="artigo.html" target="_blank" rel="noopener" class="related-card">
       <div class="rc-cat">Ferramentas</div>
       <div class="rc-title">As 10 melhores IAs gratuitas para testar agora</div>
       <div class="rc-meta">7 min · 13 abr 2026</div>
     </a>
 
-    <a href="artigo.html" class="related-card">
+    <a href="artigo.html" target="_blank" rel="noopener" class="related-card">
       <div class="rc-cat">Guia</div>
       <div class="rc-title">Prompt engineering: o guia completo em português</div>
       <div class="rc-meta">10 min · 10 abr 2026</div>
@@ -1056,7 +1157,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="index.html" class="logo" style="margin-bottom:.75rem;display:flex;">IAhoje <span class="logo-badge" style="margin-left:.5rem;">BETA</span></a>
+      <a href="index.html" target="_blank" rel="noopener" class="logo" style="margin-bottom:.75rem;display:flex;">IAhoje <span class="logo-badge" style="margin-left:.5rem;">BETA</span></a>
       <p>O portal brasileiro de inteligência artificial. Comparativos, tutoriais e novidades em português.</p>
     </div>
     <div class="footer-col">
@@ -1115,6 +1216,25 @@
     });
     tocLinks.forEach(a => {
       a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById('mobileNav');
+    var bd  = document.getElementById('navBackdrop');
+    var open = nav.classList.toggle('open');
+    bd.classList.toggle('open', open);
+  }
+  function closeMenu() {
+    document.getElementById('mobileNav').classList.remove('open');
+    document.getElementById('navBackdrop').classList.remove('open');
+  }
+  window.addEventListener('scroll', closeMenu, {passive: true});
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('#mobileNav a').forEach(function(a) {
+      a.addEventListener('click', closeMenu);
     });
   });
 </script>

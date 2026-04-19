@@ -1,0 +1,18 @@
+# IAhoje.ia.br — robots.txt
+User-agent: *
+Allow: /
+
+# Bloquear pastas internas desnecessárias
+Disallow: /assets/admin/
+Disallow: /drafts/
+Disallow: /tmp/
+
+# Sitemap
+Sitemap: https://iahoje.ia.br/sitemap.xml
+
+# Crawl delay para bots mais agressivos
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
