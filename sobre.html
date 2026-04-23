@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO ═══ -->
+  <title>Sobre — Quem está por trás do IAnova | Rômulo Labre</title>
+  <meta name="description" content="Conheça Rômulo Labre, Engenheiro de Controle e Automação com atuação em projetos de submarinos e curador do IAnova — o portal brasileiro de inteligência artificial." />
+  <meta name="keywords" content="Rômulo Labre, IAnova, sobre, engenheiro automação, curador IA, blog inteligência artificial Brasil" />
+  <meta name="author" content="Rômulo Labre" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ianova.ia.br/sobre.html" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="IAnova" />
+  <meta property="og:title" content="Sobre — Rômulo Labre, curador do IAnova" />
+  <meta property="og:description" content="Engenheiro de Controle e Automação com atuação em projetos de submarinos. Conheça quem está por trás do portal de IA mais técnico do Brasil." />
+  <meta property="og:url" content="https://ianova.ia.br/sobre.html" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ianova" />
+  <meta name="twitter:title" content="Sobre — Rômulo Labre, curador do IAnova" />
+
+  <!-- Schema: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rômulo Alves Labre",
+    "jobTitle": "Engenheiro de Controle e Automação",
+    "description": "Engenheiro de Controle e Automação com atuação em projetos de submarinos e curador do portal IAnova.",
+    "url": "https://ianova.ia.br/sobre.html",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "IAnova",
+      "url": "https://ianova.ia.br"
+    },
+    "knowsAbout": ["Inteligência Artificial", "Automação Industrial", "CLPs", "Redes Industriais", "IA Generativa"]
+  }
+  </script>
+
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══ CSS ESPECÍFICO — sobre.html ═══ */
+
+    /* ── Hero da página Sobre ── */
+    .sobre-hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4rem 2rem 3rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    /* Avatar / iniciais */
+    .sobre-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--fhead);
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: #000;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    /* Anel animado em volta do avatar */
+    .sobre-avatar::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+      z-index: -1;
+      animation: spin-ring 6s linear infinite;
+      opacity: .6;
+    }
+
+    @keyframes spin-ring {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    .sobre-hero-info {}
+
+    .sobre-tag {
+      font-family: var(--fmono);
+      font-size: .72rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: .6rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    .sobre-tag::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: .4; transform: scale(.7); }
+    }
+
+    .sobre-nome {
+      font-family: var(--fhead);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.1;
+      margin-bottom: .5rem;
+    }
+
+    .sobre-titulo {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .sobre-titulo strong { color: var(--text); font-weight: 600; }
+
+    .sobre-chips {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: .75rem;
+      font-family: var(--fmono);
+      color: var(--muted);
+      padding: .3rem .85rem;
+      transition: border-color .2s, color .2s;
+    }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── Linha divisória com gradiente ── */
+    .divider {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+    /* ── Métricas ── */
+    .sobre-metrics {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .metric-item {
+      background: var(--bg2);
+      padding: 1.5rem;
+      text-align: center;
+      transition: background .2s;
+    }
+    .metric-item:hover { background: var(--bg3); }
+
+    .metric-val {
+      font-family: var(--fhead);
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: .35rem;
+    }
+
+    .metric-lbl {
+      font-size: .78rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* ── Conteúdo principal ── */
+    .sobre-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* Coluna principal — texto */
+    .sobre-main {}
+
+    .sobre-section {
+      margin-bottom: 2.75rem;
+    }
+
+    .sobre-section-label {
+      font-family: var(--fmono);
+      font-size: .7rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: .75rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    .sobre-section-label::before {
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .sobre-section h2 {
+      font-family: var(--fhead);
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .sobre-section p {
+      font-size: .97rem;
+      color: var(--text-body);
+      font-weight: 300;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+
+    /* Citação de destaque */
+    .sobre-quote {
+      border-left: 3px solid var(--accent2);
+      padding: 1rem 1.5rem;
+      background: rgba(191,95,255,.04);
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    /* Skills list */
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: .6rem;
+    }
+
+    .skill-item {
+      display: flex;
+      align-items: flex-start;
+      gap: .85rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: .85rem 1.1rem;
+      transition: border-color .2s;
+    }
+    .skill-item:hover { border-color: rgba(0,229,255,.3); }
+
+    .skill-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: .05rem;
+    }
+
+    .skill-text {}
+    .skill-name {
+      font-family: var(--fhead);
+      font-size: .88rem;
+      font-weight: 700;
+      margin-bottom: .15rem;
+    }
+
+    .skill-desc {
+      font-size: .78rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* Missão destaque */
+    .missao-box {
+      background: linear-gradient(135deg, rgba(0,229,255,.05), rgba(191,95,255,.04));
+      border: 1px solid rgba(0,229,255,.2);
+      border-radius: 12px;
+      padding: 1.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .missao-box::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 180px; height: 180px;
+      background: radial-gradient(circle, rgba(0,229,255,.08), transparent 70%);
+      pointer-events: none;
+    }
+
+    .missao-box p {
+      font-size: .97rem;
+      color: var(--text-body);
+      line-height: 1.75;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
+    .missao-box strong { color: #fff; font-weight: 600; }
+
+    /* ── Coluna sidebar ── */
+    .sobre-sidebar {}
+
+    /* Card de contato / CTA */
+    .sobre-cta-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    .sobre-cta-card .cta-icon {
+      font-size: 2rem;
+      margin-bottom: .75rem;
+    }
+
+    .sobre-cta-card h3 {
+      font-family: var(--fhead);
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: .5rem;
+    }
+
+    .sobre-cta-card p {
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 1.1rem;
+    }
+
+    .btn-cta-full {
+      display: block;
+      background: var(--accent);
+      color: #000;
+      font-family: var(--fbody);
+      font-size: .85rem;
+      font-weight: 700;
+      padding: .7rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      transition: opacity .2s, transform .15s;
+      box-shadow: 0 0 16px rgba(0,229,255,.2);
+    }
+    .btn-cta-full:hover { opacity: .85; transform: translateY(-1px); }
+
+    .btn-cta-ghost {
+      display: block;
+      background: var(--surface);
+      color: var(--muted);
+      font-family: var(--fbody);
+      font-size: .85rem;
+      font-weight: 500;
+      padding: .65rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      border: 1px solid var(--border);
+      margin-top: .6rem;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-cta-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Princípios editoriais */
+    .principios-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .principio-item {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      padding: .7rem 0;
+      border-bottom: 1px solid rgba(37,37,53,.6);
+    }
+    .principio-item:last-child { border-bottom: none; }
+
+    .principio-num {
+      font-family: var(--fmono);
+      font-size: .65rem;
+      color: var(--accent);
+      font-weight: 700;
+      flex-shrink: 0;
+      min-width: 20px;
+      margin-top: .1rem;
+    }
+
+    .principio-text {
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .principio-text strong { color: var(--text); }
+
+    /* ── Linha do tempo da trajetória ── */
+    .trajetoria {
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .trajetoria::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
+      border-radius: 1px;
+    }
+
+    .traj-item {
+      position: relative;
+      padding-bottom: 1.75rem;
+    }
+    .traj-item:last-child { padding-bottom: 0; }
+
+    .traj-dot {
+      position: absolute;
+      left: -1.88rem;
+      top: .2rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+    }
+
+    .traj-year {
+      font-family: var(--fmono);
+      font-size: .68rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: .2rem;
+    }
+
+    .traj-title {
+      font-family: var(--fhead);
+      font-size: .95rem;
+      font-weight: 700;
+      margin-bottom: .3rem;
+    }
+
+    .traj-desc {
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* ── Autoria nos artigos (componente reutilizável) ── */
+    .author-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .author-card .av {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--fhead);
+      font-weight: 800;
+      font-size: 1rem;
+      color: #000;
+      flex-shrink: 0;
+    }
+
+    .author-card .av-info {}
+    .author-card .av-name { font-weight: 700; font-size: .9rem; }
+    .author-card .av-role { font-size: .78rem; color: var(--muted); }
+    .author-card .av-tag  {
+      font-family: var(--fmono);
+      font-size: .65rem;
+      color: var(--accent);
+      margin-top: .2rem;
+    }
+
+    /* ── Responsivo ── */
+    @media (max-width: 900px) {
+      .sobre-hero    { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+      .sobre-chips   { justify-content: center; }
+      .sobre-content { grid-template-columns: 1fr; }
+      .sobre-sidebar { order: -1; }
+      .sobre-metrics { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 600px) {
+      .sobre-hero    { padding: 2.5rem 1rem 2rem; }
+      .sobre-content { padding: 2rem 1rem; }
+      .sobre-avatar  { width: 90px; height: 90px; font-size: 2rem; }
+      .sobre-nome    { font-size: 2rem; }
+      .sobre-metrics { grid-template-columns: repeat(2, 1fr); }
+      .metric-val    { font-size: 1.6rem; }
+      .divider       { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">IAnova <span class="logo-badge">BETA</span></a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="chatgpt-vs-gemini-vs-claude-2026.html" target="_blank">Comparativos</a>
+      <a href="o-que-e-inteligencia-artificial.html" target="_blank">Tutoriais</a>
+      <a href="ferramentas.html" target="_blank">Ferramentas</a>
+      <a href="#">Notícias</a>
+      <a href="sobre.html" class="active">Sobre</a>
+    </nav>
+    <a href="index.html#newsletter" class="header-cta">Newsletter grátis</a>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Início</a>
+  <a href="chatgpt-vs-gemini-vs-claude-2026.html" target="_blank">Comparativos</a>
+  <a href="o-que-e-inteligencia-artificial.html" target="_blank">Tutoriais</a>
+  <a href="ferramentas.html" target="_blank">Ferramentas</a>
+  <a href="#">Notícias</a>
+  <a href="sobre.html" style="color:var(--accent);">Sobre</a>
+  <a href="index.html#newsletter" style="color:var(--accent);font-weight:600;">Newsletter grátis →</a>
+</nav>
+<div class="nav-backdrop" id="navBackdrop" onclick="closeMenu()"></div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Início</a> <span>›</span> <span>Sobre</span>
+</div>
+
+<!-- ══ HERO ══ -->
+<div class="sobre-hero">
+  <div class="sobre-avatar">RL</div>
+  <div class="sobre-hero-info">
+    <div class="sobre-tag">Curador & Fundador do IAnova</div>
+    <h1 class="sobre-nome">Rômulo Labre</h1>
+    <p class="sobre-titulo">
+      <strong>Engenheiro de Controle e Automação</strong> ·
+      Projetos de Submarinos · Entusiasta de IA
+    </p>
+    <div class="sobre-chips">
+      <span class="chip">⚙️ Automação Industrial</span>
+      <span class="chip">🤖 IA Generativa</span>
+      <span class="chip">🚢 Defesa & Submarinos</span>
+      <span class="chip">💻 Web & SEO</span>
+      <span class="chip">🇧🇷 Conteúdo em PT-BR</span>
+    </div>
+  </div>
+</div>
+
+<!-- MÉTRICAS -->
+<div style="max-width:1000px;margin:0 auto;padding:0 2rem 2rem;">
+  <div class="sobre-metrics">
+    <div class="metric-item">
+      <div class="metric-val">10+</div>
+      <div class="metric-lbl">anos em automação industrial</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-val">3</div>
+      <div class="metric-lbl">artigos publicados em abril/2026</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-val">42</div>
+      <div class="metric-lbl">ferramentas de IA catalogadas</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-val">100%</div>
+      <div class="metric-lbl">conteúdo curado por humano</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ CONTEÚDO PRINCIPAL ══ -->
+<div class="sobre-content">
+
+  <!-- COLUNA PRINCIPAL -->
+  <main class="sobre-main">
+
+    <!-- Bio -->
+    <div class="sobre-section">
+      <div class="sobre-section-label">Quem está por trás</div>
+      <h2>Engenharia, precisão e o mundo da IA</h2>
+      <p>
+        Me chamo Rômulo Labre e minha trajetória é definida pela precisão. Sou <strong>Engenheiro de Controle e Automação</strong>, com atuação em projetos de altíssima complexidade tecnológica no setor de submarinos — um ambiente onde sistemas críticos não admitem erros e onde desenvolvi um olhar rigoroso para como a tecnologia deve ser implementada.
+      </p>
+      <p>
+        Minha base vem da automação industrial raiz: programação de CLPs, arquitetura de redes industriais e integração de sistemas embarcados. Essa experiência me deu algo que poucos analistas de IA têm — a compreensão real de como as máquinas "pensam" e se comunicam debaixo do capô.
+      </p>
+
+      <div class="sobre-quote">
+        "Trabalhar em projetos onde a falha simplesmente não é uma opção me ensinou a avaliar tecnologia com muito mais rigor do que o mercado costuma aplicar. É essa lente que trago para cada artigo do IAnova."
+      </div>
+
+      <p>
+        Quando as IAs generativas chegaram com força até o público geral — ChatGPT, Gemini, Claude — enxerguei uma oportunidade única: usar minha formação técnica para filtrar cada IA, testar, e traduzir tudo isso em conteúdo prático para o público brasileiro.
+      </p>
+    </div>
+
+    <!-- Bagagem técnica -->
+    <div class="sobre-section">
+      <div class="sobre-section-label">Bagagem técnica</div>
+      <h2>Do CLP ao LLM</h2>
+      <p>
+        A transição de automação industrial para IA generativa não foi um salto no escuro — foi uma evolução natural. Ambas as áreas lidam com o mesmo problema fundamental: <strong>fazer sistemas complexos funcionarem de forma confiável</strong>.
+      </p>
+
+      <ul class="skills-list">
+        <li class="skill-item">
+          <span class="skill-icon">⚙️</span>
+          <div class="skill-text">
+            <div class="skill-name">Programação de CLPs</div>
+            <div class="skill-desc">Lógica de controle, automação de processos industriais e sistemas de segurança em ambientes críticos.</div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-icon">🔌</span>
+          <div class="skill-text">
+            <div class="skill-name">Redes Industriais</div>
+            <div class="skill-desc">Arquitetura de comunicação, integridade de dados e protocolos industriais (Profibus, Modbus, Ethernet/IP).</div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-icon">🤖</span>
+          <div class="skill-text">
+            <div class="skill-name">IA Generativa — Testes Variados</div>
+            <div class="skill-desc">Avaliação comparativa de LLMs (Claude, Gemini, ChatGPT) com metodologia estruturada, não baseada em hype.</div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-icon">💻</span>
+          <div class="skill-text">
+            <div class="skill-name">Web, SEO & HTML/CSS</div>
+            <div class="skill-desc">Construção de sites performáticos com foco em rankeamento orgânico e experiência do usuário.</div>
+          </div>
+        </li>
+        <li class="skill-item">
+          <span class="skill-icon">🚢</span>
+          <div class="skill-text">
+            <div class="skill-name">Sistemas Embarcados — Defesa</div>
+            <div class="skill-desc">Projetos de automação e controle em plataformas de submarinos — o nível mais exigente de confiabilidade técnica.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Trajetória -->
+    <div class="sobre-section">
+      <div class="sobre-section-label">Trajetória</div>
+      <h2>De onde vim, onde estou</h2>
+
+      <div class="trajetoria">
+        <div class="traj-item">
+          <div class="traj-dot"></div>
+          <div class="traj-year">Formação</div>
+          <div class="traj-title">Engenharia de Controle e Automação</div>
+          <div class="traj-desc">Base sólida em sistemas de controle, instrumentação industrial e lógica programável.</div>
+        </div>
+        <div class="traj-item">
+          <div class="traj-dot" style="background:var(--accent2)"></div>
+          <div class="traj-year">Carreira</div>
+          <div class="traj-title">Projetos Industriais de Alta Complexidade</div>
+          <div class="traj-desc">Atuação em automação de processos críticos, incluindo projetos no setor de defesa e submarinos.</div>
+        </div>
+        <div class="traj-item">
+          <div class="traj-dot" style="background:var(--accent3)"></div>
+          <div class="traj-year">2022–2024</div>
+          <div class="traj-title">Mergulho no ecossistema de IA</div>
+          <div class="traj-desc">Acompanhamento sistemático do surgimento das IAs generativas — ChatGPT, Gemini, Claude e tantas outras. Testes comparativos com olhar de engenheiro.</div>
+        </div>
+        <div class="traj-item">
+          <div class="traj-dot" style="background:var(--green)"></div>
+          <div class="traj-year">Abril 2026</div>
+          <div class="traj-title">Fundação do IAnova</div>
+          <div class="traj-desc">Lançamento do portal com o objetivo de ser a referência técnica de IA em português — com rigor de engenharia e linguagem acessível.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Missão -->
+    <div class="sobre-section">
+      <div class="sobre-section-label">Missão</div>
+      <h2>Por que o IAnova existe</h2>
+      <div class="missao-box">
+        <p>
+          O IAnova nasceu para ser o <strong>filtro necessário</strong> no mar de informações sobre Inteligência Artificial. Diferente de abordagens puramente teóricas, trago a visão de um engenheiro para o mundo das IAs generativas. Meu foco é ajudar o público brasileiro a elevar seu conhecimento tecnológico, transformando ferramentas complexas em <strong>ganhos reais de produtividade</strong> — com o rigor técnico que a engenharia exige, traduzido para o público geral.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sobre-sidebar">
+
+    <!-- CTA principal -->
+    <div class="sobre-cta-card">
+      <div class="cta-icon">📬</div>
+      <h3>Newsletter IAnova</h3>
+      <p>Receba os melhores comparativos e novidades de IA toda semana, com curadoria técnica.</p>
+      <a href="index.html#newsletter" class="btn-cta-full">Quero receber grátis</a>
+      <a href="ferramentas.html" class="btn-cta-ghost">Ver ferramentas →</a>
+    </div>
+
+    <!-- Princípios editoriais -->
+    <div class="sidebar-widget">
+      <div class="widget-title">Princípios editoriais</div>
+      <ul class="principios-list">
+        <li class="principio-item">
+          <span class="principio-num">01</span>
+          <div class="principio-text"><strong>Testes reais.</strong> Nenhuma ferramenta é recomendada sem uso prático.</div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">02</span>
+          <div class="principio-text"><strong>Sem hype.</strong> Se uma IA decepcionou nos testes, isso vai estar escrito.</div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">03</span>
+          <div class="principio-text"><strong>IA como ferramenta.</strong> Já que estamos falando de IA, aqui nós trabalhamos juntos: a IA gera o rascunho, o engenheiro revisa e publica.</div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">04</span>
+          <div class="principio-text"><strong>Contexto brasileiro.</strong> Preços em reais, exemplos locais, realidade do mercado nacional.</div>
+        </li>
+        <li class="principio-item">
+          <span class="principio-num">05</span>
+          <div class="principio-text"><strong>Atualização constante.</strong> O mundo da IA muda toda semana. O site acompanha.</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Artigos do curador -->
+    <div class="sidebar-widget">
+      <div class="widget-title">Últimos artigos</div>
+      <a href="chatgpt-vs-gemini-vs-claude-2026.html" target="_blank"
+         style="display:block;text-decoration:none;padding:.6rem 0;border-bottom:1px solid var(--border);">
+        <div style="font-family:var(--fmono);font-size:.62rem;color:var(--accent);margin-bottom:.2rem;">COMPARATIVO</div>
+        <div style="font-size:.83rem;color:var(--text);font-weight:500;line-height:1.35;">ChatGPT vs Gemini vs Claude em 2026</div>
+      </a>
+      <a href="ias-gratuitas-2026.html" target="_blank"
+         style="display:block;text-decoration:none;padding:.6rem 0;border-bottom:1px solid var(--border);">
+        <div style="font-family:var(--fmono);font-size:.62rem;color:var(--accent);margin-bottom:.2rem;">FERRAMENTAS</div>
+        <div style="font-size:.83rem;color:var(--text);font-weight:500;line-height:1.35;">10 melhores IAs gratuitas 2026</div>
+      </a>
+      <a href="o-que-e-inteligencia-artificial.html" target="_blank"
+         style="display:block;text-decoration:none;padding:.6rem 0;">
+        <div style="font-family:var(--fmono);font-size:.62rem;color:var(--accent);margin-bottom:.2rem;">GUIA</div>
+        <div style="font-size:.83rem;color:var(--text);font-weight:500;line-height:1.35;">O que é Inteligência Artificial?</div>
+      </a>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">IAnova <span class="logo-badge">BETA</span></a>
+      <p>O portal brasileiro de inteligência artificial, curado por Rômulo Labre — Engenheiro de Controle e Automação.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Conteúdo</h4>
+      <a href="chatgpt-vs-gemini-vs-claude-2026.html" target="_blank">Comparativos</a>
+      <a href="o-que-e-inteligencia-artificial.html" target="_blank">Tutoriais</a>
+      <a href="ferramentas.html" target="_blank">Ferramentas</a>
+      <a href="#">Notícias</a>
+    </div>
+    <div class="footer-col">
+      <h4>IAs</h4>
+      <a href="#">ChatGPT</a>
+      <a href="#">Gemini</a>
+      <a href="#">Claude</a>
+      <a href="#">Open Source</a>
+    </div>
+    <div class="footer-col">
+      <h4>IAnova</h4>
+      <a href="sobre.html">Sobre</a>
+      <a href="index.html#newsletter">Newsletter</a>
+      <a href="#">Anuncie</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 IAnova · Curado por <strong style="color:var(--text)">Rômulo Labre</strong></span>
+    <span>Feito com IA, curado por engenheiro</span>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById('mobileNav');
+    var bd  = document.getElementById('navBackdrop');
+    nav.classList.toggle('open');
+    bd.classList.toggle('open', nav.classList.contains('open'));
+  }
+  function closeMenu() {
+    document.getElementById('mobileNav').classList.remove('open');
+    document.getElementById('navBackdrop').classList.remove('open');
+  }
+  window.addEventListener('scroll', closeMenu, { passive: true });
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('#mobileNav a').forEach(function(a) {
+      a.addEventListener('click', closeMenu);
+    });
+  });
+</script>
+</body>
+</html>
