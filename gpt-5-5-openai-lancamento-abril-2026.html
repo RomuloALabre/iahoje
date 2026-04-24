@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO ═══ -->
+  <title>GPT-5.5: O que é, o que muda e o que a OpenAI não está dizendo — IAnova</title>
+  <meta name="description" content="A OpenAI lançou o GPT-5.5 em 23 de abril de 2026. Mais rápido, mais agêntico e com foco em tarefas complexas sem supervisão constante. Entenda o que realmente mudou." />
+  <meta name="keywords" content="GPT-5.5, OpenAI GPT 5.5, lançamento GPT-5.5 2026, o que é GPT-5.5, GPT-5.5 vs Claude, GPT-5.5 preço, ChatGPT GPT-5.5" />
+  <meta name="author" content="Redação IAnova" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://ianova.ia.br/noticias/gpt-5-5-openai-lancamento-abril-2026" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="IAnova" />
+  <meta property="og:title" content="GPT-5.5: O que é, o que muda e o que a OpenAI não está dizendo" />
+  <meta property="og:description" content="Lançado em 23 de abril de 2026. Mais rápido, mais agêntico. Entenda o que realmente mudou e o que isso significa para quem usa IA no trabalho." />
+  <meta property="og:url" content="https://ianova.ia.br/noticias/gpt-5-5-openai-lancamento-abril-2026" />
+  <meta property="og:image" content="https://ianova.ia.br/assets/og-gpt-5-5.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="article:published_time" content="2026-04-23T18:00:00-03:00" />
+  <meta property="article:modified_time" content="2026-04-23T18:00:00-03:00" />
+  <meta property="article:section" content="Notícias" />
+  <meta property="article:tag" content="OpenAI" />
+  <meta property="article:tag" content="GPT-5.5" />
+  <meta property="article:tag" content="ChatGPT" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ianova" />
+  <meta name="twitter:title" content="GPT-5.5: O que é, o que muda e o que a OpenAI não está dizendo" />
+  <meta name="twitter:description" content="Lançado hoje, 23 de abril de 2026. Mais agêntico, mais rápido, mais caro. Análise completa." />
+  <meta name="twitter:image" content="https://ianova.ia.br/assets/og-gpt-5-5.png" />
+
+  <!-- Schema: NewsArticle -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "GPT-5.5: O que é, o que muda e o que a OpenAI não está dizendo",
+    "description": "A OpenAI lançou o GPT-5.5 em 23 de abril de 2026. Análise técnica e prática do que realmente mudou.",
+    "image": "https://ianova.ia.br/assets/og-gpt-5-5.png",
+    "author": { "@type": "Person", "name": "Rômulo Labre", "url": "https://ianova.ia.br/sobre" },
+    "publisher": { "@type": "Organization", "name": "IAnova", "url": "https://ianova.ia.br" },
+    "datePublished": "2026-04-23T18:00:00-03:00",
+    "dateModified": "2026-04-23T18:00:00-03:00",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ianova.ia.br/noticias/gpt-5-5-openai-lancamento-abril-2026" },
+    "articleSection": "Notícias",
+    "inLanguage": "pt-BR",
+    "timeRequired": "PT8M",
+    "keywords": "GPT-5.5, OpenAI, ChatGPT, IA agêntica, lançamento 2026"
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é o GPT-5.5?",
+        "acceptedAnswer": { "@type": "Answer", "text": "GPT-5.5 é o mais recente modelo de linguagem da OpenAI, lançado em 23 de abril de 2026. É o substituto do GPT-5.4 como modelo padrão nos planos pagos do ChatGPT (Plus, Pro, Business e Enterprise). O foco principal é em tarefas agênticas — o modelo consegue planejar, usar ferramentas, corrigir erros e completar tarefas complexas com pouca supervisão humana." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto custa o GPT-5.5?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Na API, o GPT-5.5 padrão custa US$ 5 por milhão de tokens de entrada e US$ 30 por milhão de tokens de saída. O GPT-5.5 Pro custa US$ 30 e US$ 180, respectivamente — mais caro que o Claude Opus 4.5 da Anthropic. No ChatGPT, o modelo está disponível para assinantes Plus (US$ 20/mês), Pro, Business e Enterprise." }
+      },
+      {
+        "@type": "Question",
+        "name": "GPT-5.5 está disponível no plano gratuito?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Não. O GPT-5.5 está disponível apenas para assinantes pagos (Plus, Pro, Business e Enterprise). Usuários do plano gratuito continuam com acesso ao GPT-5.4 mini, o modelo intermediário lançado em março de 2026." }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre GPT-5.5 e GPT-5.4?",
+        "acceptedAnswer": { "@type": "Answer", "text": "O GPT-5.5 é descrito como mais rápido e mais eficiente por token do que o 5.4. A principal diferença é de posicionamento: enquanto o 5.4 foi focado em qualidade de raciocínio e redução de erros factuais, o 5.5 é o primeiro modelo da OpenAI posicionado primariamente como um agente — capaz de completar tarefas de múltiplos passos com pouca supervisão." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://ianova.ia.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Notícias", "item": "https://ianova.ia.br/noticias/" },
+      { "@type": "ListItem", "position": 3, "name": "GPT-5.5: lançamento abril 2026", "item": "https://ianova.ia.br/noticias/gpt-5-5-openai-lancamento-abril-2026" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --bg2: #0f0f18; --bg3: #16161f;
+      --surface: #1a1a26; --border: #252535;
+      --text: #e8e8f0; --muted: #7070a0;
+      --accent: #00e5ff; --accent2: #bf5fff; --accent3: #ff6b35;
+      --green: #00ff88; --yellow: #ffd60a; --red: #ff5555;
+      --fhead: 'Syne', sans-serif; --fbody: 'DM Sans', sans-serif; --fmono: 'DM Mono', monospace;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--fbody); font-size: 16px; line-height: 1.7; overflow-x: hidden; }
+    body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; opacity: .4; }
+    ::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: var(--bg); } ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+    #progress { position: fixed; top: 0; left: 0; z-index: 9998; height: 2px; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent2)); transition: width .1s linear; }
+
+    header { position: sticky; top: 0; z-index: 100; background: rgba(10,10,15,.88); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .header-inner { max-width: 1280px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-family: var(--fhead); font-size: 1.5rem; font-weight: 800; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: .5rem; letter-spacing: -.02em; }
+    .logo-badge { background: var(--accent); color: #000; font-size: .55rem; font-weight: 700; padding: 2px 6px; border-radius: 3px; font-family: var(--fmono); }
+    nav { display: flex; gap: .25rem; }
+    nav a { color: var(--muted); text-decoration: none; font-size: .85rem; font-weight: 500; padding: .4rem .75rem; border-radius: 6px; transition: color .2s, background .2s; }
+    nav a:hover { color: var(--text); background: var(--surface); }
+    .header-cta { background: var(--accent); color: #000; border: none; font-family: var(--fbody); font-size: .8rem; font-weight: 600; padding: .45rem 1rem; border-radius: 6px; cursor: pointer; text-decoration: none; transition: opacity .2s; }
+    .header-cta:hover { opacity: .85; }
+    .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: .4rem; }
+    .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; }
+    .mobile-nav { display: none; flex-direction: column; position: fixed; top: 64px; left: 0; right: 0; z-index: 200; background: var(--bg2); border-bottom: 1px solid var(--border); padding: .75rem 1.25rem; box-shadow: 0 8px 32px rgba(0,0,0,.5); }
+    .mobile-nav a { color: var(--muted); text-decoration: none; font-size: .95rem; font-weight: 500; padding: .65rem 0; border-bottom: 1px solid var(--border); transition: color .2s; }
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav a:hover { color: var(--accent); }
+    .mobile-nav.open { display: flex; }
+    .nav-backdrop { display: none; position: fixed; inset: 0; top: 64px; z-index: 199; background: rgba(0,0,0,.4); }
+    .nav-backdrop.open { display: block; }
+
+    /* Breaking badge */
+    .breaking-bar { background: linear-gradient(90deg, rgba(255,85,85,.15), rgba(255,107,53,.1)); border-bottom: 1px solid rgba(255,85,85,.25); padding: .5rem 2rem; display: flex; align-items: center; gap: .75rem; }
+    .breaking-pill { background: var(--red); color: #fff; font-family: var(--fmono); font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; padding: .2rem .6rem; border-radius: 3px; flex-shrink: 0; }
+    .breaking-text { font-size: .8rem; color: var(--muted); font-family: var(--fmono); }
+    .breaking-text strong { color: var(--text); }
+
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 1.25rem 2rem .5rem; font-family: var(--fmono); font-size: .72rem; color: var(--muted); display: flex; align-items: center; gap: .4rem; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--accent); }
+
+    .article-header { max-width: 860px; margin: 0 auto; padding: 1.5rem 2rem 2rem; }
+    .article-category { font-family: var(--fmono); font-size: .75rem; color: var(--red); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 1rem; display: flex; align-items: center; gap: .5rem; }
+    .live-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--red); animation: pulse 1.5s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+    .article-title { font-family: var(--fhead); font-size: clamp(1.8rem, 4.5vw, 2.8rem); font-weight: 800; line-height: 1.1; letter-spacing: -.03em; margin-bottom: 1.25rem; }
+    .article-lead { font-size: 1.1rem; color: var(--muted); font-weight: 300; line-height: 1.7; margin-bottom: 1.75rem; border-left: 3px solid var(--red); padding-left: 1.25rem; }
+    .article-meta { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .author { display: flex; align-items: center; gap: .6rem; }
+    .author-avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 700; color: #000; font-family: var(--fhead); flex-shrink: 0; }
+    .author-name { font-size: .82rem; font-weight: 600; }
+    .author-role { font-size: .72rem; color: var(--muted); }
+    .meta-divider { width: 1px; height: 28px; background: var(--border); }
+    .meta-item { font-size: .78rem; color: var(--muted); font-family: var(--fmono); }
+    .badge { font-size: .65rem; font-family: var(--fmono); font-weight: 600; padding: 2px 8px; border-radius: 100px; }
+    .badge-red { background: rgba(255,85,85,.1); color: var(--red); border: 1px solid rgba(255,85,85,.25); }
+    .badge-blue { background: rgba(0,229,255,.1); color: var(--accent); border: 1px solid rgba(0,229,255,.2); }
+    .badge-yellow { background: rgba(255,214,10,.1); color: var(--yellow); border: 1px solid rgba(255,214,10,.2); }
+
+    /* Hero visual */
+    .article-hero { max-width: 860px; margin: 0 auto 2.5rem; padding: 0 2rem; }
+    .hero-visual { border-radius: 16px; background: linear-gradient(135deg, #0f0610 0%, #0a0f18 60%, #0f0a06 100%); padding: 2.5rem 2rem; position: relative; display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 3vw, 2.5rem); flex-wrap: wrap; overflow: hidden; }
+    .hero-visual .grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,85,85,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,85,85,.03) 1px, transparent 1px); background-size: 48px 48px; }
+    .hero-visual .orb { position: absolute; border-radius: 50%; filter: blur(70px); }
+    .orb-1 { width: 300px; height: 300px; background: rgba(16,163,127,.08); top: -60px; right: -40px; }
+    .orb-2 { width: 200px; height: 200px; background: rgba(0,229,255,.05); bottom: -30px; left: 0; }
+    .hero-stat { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+    .hero-stat-number { font-family: var(--fhead); font-size: 2.2rem; font-weight: 800; line-height: 1; background: linear-gradient(135deg, #10a37f, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-stat-label { font-size: .75rem; color: rgba(255,255,255,.45); text-align: center; font-family: var(--fmono); max-width: 130px; line-height: 1.4; }
+    .hero-divider { width: 1px; height: 60px; background: rgba(255,255,255,.07); }
+
+    /* Layout */
+    .article-layout { max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem; display: grid; grid-template-columns: 1fr 280px; gap: 3.5rem; align-items: start; }
+    .article-body { max-width: 740px; overflow-wrap: break-word; word-break: break-word; }
+
+    /* TOC */
+    .toc { background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--red); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 2.5rem; }
+    .toc-title { font-family: var(--fhead); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: .85rem; }
+    .toc ol { padding-left: 1.2rem; }
+    .toc li { margin-bottom: .4rem; }
+    .toc a { color: var(--muted); text-decoration: none; font-size: .85rem; transition: color .2s; }
+    .toc a:hover { color: var(--accent); }
+
+    /* Prose */
+    .prose h2 { font-family: var(--fhead); font-size: 1.55rem; font-weight: 800; letter-spacing: -.025em; margin: 2.75rem 0 1rem; color: #fff; line-height: 1.2; padding-top: 1rem; border-top: 1px solid var(--border); }
+    .prose h3 { font-family: var(--fhead); font-size: 1.1rem; font-weight: 700; margin: 2rem 0 .7rem; color: var(--text); }
+    .prose p { margin-bottom: 1.3rem; color: #cccce0; font-weight: 300; font-size: .97rem; }
+    .prose strong { font-weight: 600; color: #fff; }
+    .prose em { font-style: italic; color: var(--muted); }
+    .prose a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(0,229,255,.3); }
+    .prose a:hover { border-color: var(--accent); }
+    .prose ul, .prose ol { padding-left: 1.5rem; margin-bottom: 1.3rem; }
+    .prose li { margin-bottom: .5rem; color: #cccce0; font-weight: 300; font-size: .97rem; }
+    .prose blockquote { border-left: 3px solid var(--accent2); margin: 1.75rem 0; padding: .85rem 1.25rem; background: rgba(191,95,255,.04); border-radius: 0 6px 6px 0; font-style: italic; color: var(--muted); font-size: .95rem; }
+
+    /* Callouts */
+    .callout { border-radius: 10px; padding: 1.1rem 1.4rem; margin: 1.75rem 0; display: flex; gap: .9rem; align-items: flex-start; }
+    .callout-info { background: rgba(0,229,255,.05); border: 1px solid rgba(0,229,255,.18); }
+    .callout-tip { background: rgba(0,255,136,.05); border: 1px solid rgba(0,255,136,.18); }
+    .callout-warn { background: rgba(255,214,10,.05); border: 1px solid rgba(255,214,10,.18); }
+    .callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: .1rem; }
+    .callout-body { font-size: .875rem; line-height: 1.65; color: var(--muted); }
+    .callout-body strong { display: block; font-family: var(--fhead); font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; margin-bottom: .3rem; }
+    .callout-info strong { color: var(--accent); }
+    .callout-tip strong { color: var(--green); }
+    .callout-warn strong { color: var(--yellow); }
+
+    /* Spec cards */
+    .spec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .85rem; margin: 1.75rem 0; }
+    .spec-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; }
+    .spec-label { font-family: var(--fmono); font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: .4rem; }
+    .spec-value { font-family: var(--fhead); font-size: 1.1rem; font-weight: 800; color: var(--text); line-height: 1.2; }
+    .spec-sub { font-size: .72rem; color: var(--muted); margin-top: .2rem; font-family: var(--fmono); }
+
+    /* Capability list */
+    .cap-list { margin: 1.5rem 0; }
+    .cap-item { display: flex; gap: 1rem; padding: .85rem 1rem; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; margin-bottom: .6rem; align-items: flex-start; transition: border-color .2s; }
+    .cap-item:hover { border-color: rgba(0,229,255,.2); }
+    .cap-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: .1rem; }
+    .cap-text h4 { font-family: var(--fhead); font-size: .88rem; font-weight: 700; color: var(--text); margin-bottom: .2rem; }
+    .cap-text p { font-size: .8rem; color: var(--muted); margin: 0; line-height: 1.5; }
+
+    /* Pricing table */
+    .price-table-wrap { overflow-x: auto; margin: 1.75rem 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+    .price-table { width: 100%; border-collapse: collapse; min-width: 480px; }
+    .price-table th { background: var(--surface); padding: .8rem 1.1rem; font-family: var(--fmono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); text-align: left; }
+    .price-table td { padding: .85rem 1.1rem; font-size: .85rem; border-bottom: 1px solid rgba(37,37,53,.6); background: var(--bg2); color: #cccce0; }
+    .price-table tr:last-child td { border-bottom: none; }
+    .price-table tr:hover td { background: var(--bg3); }
+    .price-table .row-label { font-weight: 600; color: var(--text); }
+    .price-table .highlight { color: var(--yellow); font-weight: 600; }
+    .price-table .free { color: var(--green); font-weight: 600; }
+
+    /* Timeline */
+    .timeline { margin: 1.75rem 0; position: relative; }
+    .timeline::before { content: ''; position: absolute; left: 16px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+    .tl-item { display: flex; gap: 1.25rem; margin-bottom: 1.25rem; position: relative; }
+    .tl-dot { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--border); background: var(--bg2); display: flex; align-items: center; justify-content: center; font-family: var(--fmono); font-size: .6rem; font-weight: 700; color: var(--muted); flex-shrink: 0; z-index: 1; }
+    .tl-dot.active { border-color: var(--accent); color: var(--accent); background: rgba(0,229,255,.08); }
+    .tl-dot.new { border-color: var(--green); color: var(--green); background: rgba(0,255,136,.08); }
+    .tl-body { padding-top: .35rem; }
+    .tl-date { font-family: var(--fmono); font-size: .68rem; color: var(--muted); margin-bottom: .2rem; }
+    .tl-title { font-family: var(--fhead); font-size: .9rem; font-weight: 700; color: var(--text); margin-bottom: .2rem; }
+    .tl-desc { font-size: .8rem; color: var(--muted); line-height: 1.5; }
+
+    /* bar chart */
+    .bar-chart { margin: 1.75rem 0; }
+    .bar-row { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
+    .bar-label { font-size: .8rem; color: var(--muted); min-width: 180px; font-weight: 500; }
+    .bar-track { flex: 1; height: 6px; background: var(--surface); border-radius: 3px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 3px; }
+    .bar-val { font-family: var(--fmono); font-size: .72rem; color: var(--muted); min-width: 50px; text-align: right; }
+
+    /* Monetização */
+    .affiliate-widget { background: linear-gradient(135deg,rgba(0,229,255,.06),rgba(191,95,255,.06)); border: 1px solid rgba(0,229,255,.2); }
+    .affiliate-widget .widget-title { color: var(--accent); border-bottom-color: rgba(0,229,255,.15); }
+    .aff-tool { display: flex; align-items: center; justify-content: space-between; padding: .6rem 0; border-bottom: 1px solid var(--border); gap: .5rem; }
+    .aff-tool:last-of-type { border-bottom: none; }
+    .aff-tool-info { display: flex; flex-direction: column; gap: .15rem; }
+    .aff-tool-name { font-size: .82rem; font-weight: 600; color: var(--text); }
+    .aff-tool-desc { font-size: .7rem; color: var(--muted); font-family: var(--fmono); }
+    .btn-try { background: var(--accent); color: #000; font-size: .68rem; font-weight: 700; font-family: var(--fmono); padding: .3rem .65rem; border-radius: 4px; text-decoration: none; flex-shrink: 0; transition: opacity .2s; }
+    .btn-try:hover { opacity: .85; }
+    .btn-try.placeholder { background: var(--surface); color: var(--muted); border: 1px solid var(--border); pointer-events: none; }
+    .aff-disclaimer { font-size: .65rem; color: var(--muted); margin-top: .75rem; line-height: 1.5; font-style: italic; }
+    .article-cta { background: linear-gradient(135deg,rgba(0,229,255,.05),rgba(191,95,255,.05)); border: 1px solid rgba(0,229,255,.18); border-radius: 14px; padding: 1.75rem; margin: 2.5rem 0; }
+    .article-cta-label { font-family: var(--fmono); font-size: .68rem; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: .6rem; }
+    .article-cta-title { font-family: var(--fhead); font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: .5rem; }
+    .article-cta-text { font-size: .875rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.25rem; }
+    .article-cta-tools { display: grid; grid-template-columns: repeat(3,1fr); gap: .75rem; margin-bottom: 1.25rem; }
+    .cta-tool-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; display: flex; flex-direction: column; gap: .4rem; transition: border-color .2s; }
+    .cta-tool-card:hover { border-color: rgba(0,229,255,.3); }
+    .cta-tool-icon { font-size: 1.4rem; }
+    .cta-tool-name { font-family: var(--fhead); font-size: .85rem; font-weight: 700; color: var(--text); }
+    .cta-tool-tag { font-family: var(--fmono); font-size: .65rem; color: var(--muted); }
+    .cta-tool-btn { margin-top: .35rem; display: inline-block; background: transparent; border: 1px solid var(--border); color: var(--muted); font-size: .7rem; font-family: var(--fmono); padding: .3rem .6rem; border-radius: 4px; text-decoration: none; text-align: center; transition: all .2s; }
+    .cta-tool-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .cta-tool-btn.placeholder { pointer-events: none; opacity: .45; }
+    .article-cta-footer { font-size: .7rem; color: var(--muted); font-style: italic; }
+
+    /* FAQ */
+    .faq { margin-top: 3rem; }
+    .faq-title { font-family: var(--fhead); font-size: 1.3rem; font-weight: 800; letter-spacing: -.02em; margin-bottom: 1rem; }
+    .faq-item { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: .75rem; }
+    .faq-q { width: 100%; background: var(--bg2); border: none; padding: 1rem 1.25rem; display: flex; align-items: center; justify-content: space-between; font-family: var(--fbody); font-size: .9rem; font-weight: 500; color: var(--text); cursor: pointer; text-align: left; transition: background .2s; }
+    .faq-q:hover { background: var(--bg3); }
+    .faq-arrow { color: var(--muted); font-size: .75rem; transition: transform .25s; flex-shrink: 0; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s; background: var(--surface); font-size: .875rem; color: var(--muted); line-height: 1.7; }
+    .faq-item.open .faq-a { max-height: 300px; padding: 1rem 1.25rem; }
+
+    /* Article footer */
+    .article-footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+    .af-tags { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .af-tag { background: var(--surface); color: var(--muted); font-size: .75rem; font-family: var(--fmono); padding: .3rem .8rem; border-radius: 4px; border: 1px solid var(--border); text-decoration: none; transition: all .2s; }
+    .af-tag:hover { border-color: var(--accent); color: var(--accent); }
+    .share-row { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+    .share-label { font-size: .78rem; color: var(--muted); font-family: var(--fmono); }
+    .share-btn { background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: .78rem; padding: .4rem .85rem; border-radius: 6px; cursor: pointer; font-family: var(--fbody); transition: all .2s; }
+    .share-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Related */
+    .related { max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem; }
+    .related-title { font-family: var(--fhead); font-size: 1rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; display: flex; align-items: center; gap: .6rem; margin-bottom: 1.5rem; }
+    .related-title::before { content: ''; display: block; width: 20px; height: 2px; background: var(--accent); }
+    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+    .related-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; text-decoration: none; display: block; transition: all .2s; }
+    .related-card:hover { border-color: rgba(0,229,255,.3); transform: translateY(-2px); }
+    .rc-cat { font-family: var(--fmono); font-size: .68rem; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; margin-bottom: .5rem; }
+    .rc-title { font-family: var(--fhead); font-size: .95rem; font-weight: 700; color: var(--text); line-height: 1.3; margin-bottom: .6rem; }
+    .rc-meta { font-size: .75rem; color: var(--muted); font-family: var(--fmono); }
+
+    /* Sidebar */
+    .sticky-sidebar { position: sticky; top: 80px; }
+    .sidebar-widget { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; margin-bottom: 1.25rem; }
+    .widget-title { font-family: var(--fhead); font-size: .75rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 1rem; padding-bottom: .75rem; border-bottom: 1px solid var(--border); }
+    .toc-sidebar a { display: block; padding: .4rem 0; color: var(--muted); text-decoration: none; font-size: .8rem; border-left: 2px solid transparent; padding-left: .75rem; transition: all .2s; }
+    .toc-sidebar a:hover, .toc-sidebar a.active { color: var(--accent); border-left-color: var(--accent); }
+
+    footer { border-top: 1px solid var(--border); background: var(--bg2); }
+    .footer-inner { max-width: 1280px; margin: 0 auto; padding: 2.5rem 2rem 2rem; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; }
+    .footer-brand p { font-size: .825rem; color: var(--muted); line-height: 1.6; margin-top: .5rem; }
+    .footer-col h4 { font-family: var(--fhead); font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: .9rem; }
+    .footer-col a { display: block; color: var(--muted); text-decoration: none; font-size: .825rem; margin-bottom: .45rem; transition: color .2s; }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom { max-width: 1280px; margin: 0 auto; padding: 1.25rem 2rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; font-size: .75rem; color: var(--muted); font-family: var(--fmono); }
+
+    @media (max-width:680px) { .spec-grid { grid-template-columns: 1fr 1fr; } .article-cta-tools { grid-template-columns: 1fr; } }
+    @media (max-width:900px) { .article-layout { grid-template-columns: 1fr; } .sticky-sidebar { display: none; } .related-grid { grid-template-columns: 1fr 1fr; } .footer-inner { grid-template-columns: 1fr 1fr; } nav { display: none; } .menu-toggle { display: flex; } .header-cta { display: none; } }
+    @media (max-width:600px) { .spec-grid { grid-template-columns: 1fr; } .related-grid { grid-template-columns: 1fr; } .footer-inner { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 1rem 1rem; } .footer-bottom { flex-direction: column; gap: .5rem; text-align: center; padding: 1rem; } .article-header, .article-hero, .breadcrumb { padding-left: 1rem; padding-right: 1rem; } .article-layout { padding: 0 1rem 3rem; } .article-title { font-size: 1.75rem; } .related { padding: 0 1rem 3rem; } * { min-width: 0; } }
+  </style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">IAnova <span class="logo-badge">BETA</span></a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="chatgpt-vs-gemini-vs-claude-2026.html">Comparativos</a>
+      <a href="o-que-e-inteligencia-artificial.html">Tutoriais</a>
+      <a href="ferramentas.html">Ferramentas</a>
+      <a href="#">Notícias</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+    <a href="index.html#newsletter" class="header-cta">Newsletter grátis</a>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Início</a>
+  <a href="chatgpt-vs-gemini-vs-claude-2026.html">Comparativos</a>
+  <a href="o-que-e-inteligencia-artificial.html">Tutoriais</a>
+  <a href="ferramentas.html">Ferramentas</a>
+  <a href="#">Notícias</a>
+  <a href="index.html#newsletter" style="color:var(--accent);font-weight:600;">Newsletter grátis →</a>
+</nav>
+<div class="nav-backdrop" id="navBackdrop" onclick="closeMenu()"></div>
+
+<!-- BREAKING BAR -->
+<div class="breaking-bar">
+  <span class="breaking-pill">⚡ Breaking</span>
+  <span class="breaking-text"><strong>23 de abril de 2026 —</strong> OpenAI lança o GPT-5.5 para assinantes pagos. Análise atualizada em tempo real.</span>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">Início</a> <span>›</span>
+  <a href="#">Notícias</a> <span>›</span>
+  <span>GPT-5.5 lançamento</span>
+</div>
+
+<div class="article-header">
+  <div class="article-category">
+    <div class="live-dot"></div>
+    Notícia · 8 min de leitura · Publicado hoje
+  </div>
+  <h1 class="article-title">GPT-5.5: O que é, o que muda<br>e o que a OpenAI não está dizendo</h1>
+  <p class="article-lead">
+    Lançado em 23 de abril de 2026, apenas seis semanas após o GPT-5.4. A OpenAI chama de "o modelo mais inteligente e intuitivo que já construímos". Mas o que realmente mudou — e o que isso significa para quem usa IA no dia a dia?
+  </p>
+  <div class="article-meta">
+    <div class="author">
+      <div class="author-avatar">RL</div>
+      <div>
+        <div class="author-name">Rômulo Labre</div>
+        <div class="author-role">Engenheiro de Controle e Automação</div>
+      </div>
+    </div>
+    <div class="meta-divider"></div>
+    <div class="meta-item">📅 23 abr 2026, 18h</div>
+    <div class="meta-divider"></div>
+    <div class="meta-item">⏱ 8 min</div>
+    <span class="badge badge-red">⚡ Hoje</span>
+    <span class="badge badge-blue">OpenAI</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="hero-visual">
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">6 sem.</div>
+      <div class="hero-stat-label">desde o GPT-5.4 até o 5.5</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">900M</div>
+      <div class="hero-stat-label">usuários ativos semanais no ChatGPT</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">50M+</div>
+      <div class="hero-stat-label">assinantes pagos globais</div>
+    </div>
+  </div>
+</div>
+
+<!-- LAYOUT -->
+<div class="article-layout">
+<article class="article-body">
+
+  <div class="toc">
+    <div class="toc-title">Neste artigo</div>
+    <ol>
+      <li><a href="#o-que-e">O que é o GPT-5.5</a></li>
+      <li><a href="#capacidades">O que ele faz de novo</a></li>
+      <li><a href="#preco">Preço e disponibilidade</a></li>
+      <li><a href="#linha-do-tempo">Linha do tempo OpenAI 2026</a></li>
+      <li><a href="#vs-concorrentes">GPT-5.5 vs Claude e Gemini</a></li>
+      <li><a href="#o-que-nao-dizem">O que a OpenAI não está dizendo</a></li>
+      <li><a href="#faz-diferenca">Faz diferença para você?</a></li>
+      <li><a href="#faq">Perguntas frequentes</a></li>
+    </ol>
+  </div>
+
+  <div class="prose">
+
+    <h2 id="o-que-e">O que é o GPT-5.5</h2>
+
+    <p>O GPT-5.5 é o novo modelo principal da OpenAI, lançado em 23 de abril de 2026. Ele substitui o GPT-5.4 como padrão nos planos pagos do ChatGPT — Plus, Pro, Business e Enterprise — e também está disponível no Codex, a plataforma de programação da OpenAI.</p>
+
+    <p>O presidente da OpenAI, Greg Brockman, descreveu o modelo como <strong>"pensador mais rápido e preciso para menos tokens"</strong> — o que na prática significa: respostas mais ágeis e menos desperdício de processamento para chegar a um resultado de qualidade. O ponto central, porém, não é a velocidade. É o que o modelo faz com ela.</p>
+
+    <p>Pela primeira vez, a OpenAI lançou um modelo descrito primariamente como um <strong>agente</strong> — não como um chatbot mais capaz. A mudança de linguagem é deliberada e revela uma mudança de estratégia: a empresa quer competir no mercado de automação de trabalho complexo, não apenas no mercado de assistentes de chat.</p>
+
+    <div class="callout callout-info">
+      <div class="callout-icon">ℹ️</div>
+      <div class="callout-body">
+        <strong>Contexto rápido</strong>
+        O GPT-5.4 foi lançado em março de 2026 com foco em raciocínio e redução de erros factuais. Seis semanas depois chegou o 5.5, um ritmo que o próprio Jakub Pachocki, cientista-chefe da OpenAI, admitiu: "Os últimos dois anos foram surpreendentemente lentos" — deixando claro que o ritmo atual vai acelerar ainda mais.
+      </div>
+    </div>
+
+    <h2 id="capacidades">O que ele faz de novo</h2>
+
+    <p>A OpenAI listou cinco áreas de melhoria central no GPT-5.5. Vou passar cada uma pelo olhar de quem entende de sistemas e automação — porque nem tudo que a empresa anuncia tem o peso que parece ter.</p>
+
+    <div class="cap-list">
+      <div class="cap-item">
+        <div class="cap-icon">💻</div>
+        <div class="cap-text">
+          <h4>Código e debugging em contextos longos</h4>
+          <p>O modelo consegue manter contexto em sessões longas de programação sem "esquecer" o que foi definido no início. Para quem trabalha com bases de código grandes, é uma diferença real. O Codex recebeu atualizações simultâneas para aproveitar isso.</p>
+        </div>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon">🖥️</div>
+        <div class="cap-text">
+          <h4>Computer use — operar software diretamente</h4>
+          <p>O GPT-5.5 consegue navegar interfaces gráficas, preencher formulários, operar planilhas e executar tarefas em softwares sem que você precise fazer passo a passo. É a aposta mais agressiva da OpenAI no mercado de automação de workflows.</p>
+        </div>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon">🔬</div>
+        <div class="cap-text">
+          <h4>Pesquisa científica e técnica</h4>
+          <p>Mark Chen, diretor de pesquisa da OpenAI, afirmou que o modelo "mostra ganhos significativos em workflows de pesquisa científica e técnica". A empresa cita potencial para auxiliar na descoberta de medicamentos — uma área que tem atraído muito investimento do setor.</p>
+        </div>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon">📊</div>
+        <div class="cap-text">
+          <h4>Tarefas de múltiplos passos sem supervisão</h4>
+          <p>A grande aposta: você descreve um objetivo complexo e o modelo planeja, executa etapas, verifica os próprios resultados e corrige erros — sem precisar ser guiado a cada passo. É o que a OpenAI chama de "agentic computing".</p>
+        </div>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon">🌐</div>
+        <div class="cap-text">
+          <h4>Pesquisa web de múltiplos passos com citações</h4>
+          <p>Lê, cruza referências e cita fontes em pesquisas que exigem síntese de múltiplas fontes. Vai além do deep research anterior — agora com melhor qualidade de raciocínio sobre o que encontra.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="preco">Preço e disponibilidade</h2>
+
+    <p>O GPT-5.5 está disponível hoje para assinantes pagos do ChatGPT. Usuários do plano gratuito continuam com acesso ao GPT-5.4 mini. Na API, os preços ficaram assim:</p>
+
+    <div class="price-table-wrap">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Variante</th>
+            <th>Input (por 1M tokens)</th>
+            <th>Output (por 1M tokens)</th>
+            <th>Disponível em</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">GPT-5.5 padrão</td>
+            <td class="highlight">US$ 5,00</td>
+            <td class="highlight">US$ 30,00</td>
+            <td>ChatGPT Plus, Business, Enterprise · API</td>
+          </tr>
+          <tr>
+            <td class="row-label">GPT-5.5 Pro</td>
+            <td class="highlight">US$ 30,00</td>
+            <td class="highlight">US$ 180,00</td>
+            <td>ChatGPT Pro, Business, Enterprise · API</td>
+          </tr>
+          <tr>
+            <td class="row-label">GPT-5.4 mini (gratuito)</td>
+            <td class="free">Grátis</td>
+            <td class="free">Grátis</td>
+            <td>ChatGPT Free · Limitado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="spec-grid">
+      <div class="spec-card">
+        <div class="spec-label">Plano mínimo</div>
+        <div class="spec-value">Plus</div>
+        <div class="spec-sub">US$ 20/mês no ChatGPT</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-label">API — input padrão</div>
+        <div class="spec-value">US$ 5/M</div>
+        <div class="spec-sub">tokens de entrada</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-label">API Pro — output</div>
+        <div class="spec-value">US$ 180/M</div>
+        <div class="spec-sub">tokens de saída no nível Pro</div>
+      </div>
+    </div>
+
+    <div class="callout callout-warn">
+      <div class="callout-icon">⚠️</div>
+      <div class="callout-body">
+        <strong>Atenção ao preço Pro</strong>
+        US$ 180 por milhão de tokens de saída no GPT-5.5 Pro é significativamente mais caro que o Claude Opus 4.5 da Anthropic. Para automações de alto volume, o custo precisa entrar na equação antes de migrar. O nível padrão (US$ 30/M output) fica próximo ao Claude Sonnet.
+      </div>
+    </div>
+
+    <h2 id="linha-do-tempo">A linha do tempo que revela a estratégia</h2>
+
+    <p>Para entender o GPT-5.5, é preciso ver onde ele se encaixa na cadência de lançamentos da OpenAI em 2026. A velocidade diz muito sobre as intenções da empresa.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">Nov</div>
+        <div class="tl-body">
+          <div class="tl-date">Novembro 2025</div>
+          <div class="tl-title">GPT-5.2 — foco em raciocínio</div>
+          <div class="tl-desc">Lançamento com modo de "thinking" e primeiros benchmarks de raciocínio encadeado.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">Dez</div>
+        <div class="tl-body">
+          <div class="tl-date">Dezembro 2025</div>
+          <div class="tl-title">GPT-5.3 — versão intermediária</div>
+          <div class="tl-desc">Atualização de estabilidade e melhoria em knowledge work. GPT-5.1 descontinuado.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">Mar</div>
+        <div class="tl-body">
+          <div class="tl-date">5 de março 2026</div>
+          <div class="tl-title">GPT-5.4 — foco em trabalho profissional</div>
+          <div class="tl-desc">33% menos erros factuais que o 5.2. Record em benchmarks de computer use. GPT-5.4 mini e nano lançados em março.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot active">Abr</div>
+        <div class="tl-body">
+          <div class="tl-date">16 de abril 2026</div>
+          <div class="tl-title">Codex atualizado para agentes</div>
+          <div class="tl-desc">Preparação do ecossistema para o lançamento do 5.5.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot new">HOJE</div>
+        <div class="tl-body">
+          <div class="tl-date">23 de abril 2026</div>
+          <div class="tl-title">GPT-5.5 — o agente</div>
+          <div class="tl-desc">Primeiro modelo OpenAI posicionado como agent runtime. Disponível para Plus, Pro, Business e Enterprise.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="vs-concorrentes">GPT-5.5 vs Claude e Gemini — onde cada um está</h2>
+
+    <p>A OpenAI não lança em vácuo. O GPT-5.5 chegou em resposta direta a movimentos recentes dos concorrentes — especialmente da Anthropic, que lançou o Claude Opus 4.5 com foco em agentes e o Mythos Preview para cibersegurança nas últimas semanas.</p>
+
+    <div class="bar-chart">
+      <div class="bar-row">
+        <div class="bar-label">GPT-5.5 — Agência e tarefas</div>
+        <div class="bar-track"><div class="bar-fill" style="width:93%;background:linear-gradient(90deg,#10a37f,var(--accent))"></div></div>
+        <div class="bar-val">★★★★★</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Claude Opus 4.5 — Escrita e análise</div>
+        <div class="bar-track"><div class="bar-fill" style="width:91%;background:linear-gradient(90deg,var(--accent2),var(--accent))"></div></div>
+        <div class="bar-val">★★★★★</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Gemini 3.1 Pro — Integração Google</div>
+        <div class="bar-track"><div class="bar-fill" style="width:85%;background:linear-gradient(90deg,#4285f4,var(--accent))"></div></div>
+        <div class="bar-val">★★★★☆</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">GPT-5.5 — Raciocínio técnico</div>
+        <div class="bar-track"><div class="bar-fill" style="width:90%;background:linear-gradient(90deg,#10a37f,var(--green))"></div></div>
+        <div class="bar-val">★★★★★</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">GPT-5.5 — Custo (Pro tier)</div>
+        <div class="bar-track"><div class="bar-fill" style="width:35%;background:linear-gradient(90deg,var(--accent3),var(--red))"></div></div>
+        <div class="bar-val">★★☆☆☆</div>
+      </div>
+    </div>
+
+    <p>O benchmarks divulgados pela OpenAI mostram o 5.5 superior ao Gemini 3.1 Pro e ao Claude Opus 4.5 nos testes da própria empresa — mas benchmarks proprietários sempre precisam ser lidos com ceticismo. O que podemos dizer com segurança é que os três estão em nível técnico extremamente próximo, e a diferença real hoje é de <strong>ecossistema e caso de uso</strong>, não de capacidade bruta.</p>
+
+    <h2 id="o-que-nao-dizem">O que a OpenAI não está dizendo</h2>
+
+    <p>Seis semanas entre versões principais é ritmo de produto, não de pesquisa. Quando uma empresa de fronteira lança com essa velocidade, há duas leituras possíveis: está muito à frente e pode se dar ao luxo de lançar rápido, ou está sob pressão e precisa mostrar movimento para não perder espaço narrativo para a Anthropic.</p>
+
+    <p>A narrativa que circulou nas semanas anteriores ao lançamento — de que a OpenAI estava perdendo tração para o Claude junto a clientes enterprise — é exatamente o que o GPT-5.5 endereça no discurso. A empresa anunciou 9 milhões de usuários empresariais pagos e 900 milhões de usuários ativos semanais, números que servem tanto como dado quanto como mensagem: <em>"ainda somos os maiores"</em>.</p>
+
+    <p>O GPT-5.5 Pro a US$ 180 por milhão de tokens de saída também levanta uma questão estratégica: a OpenAI está subindo no mercado, mirando em enterprise de alto valor — não no usuário comum. Quem vai pagar isso não é o profissional individual. É a empresa que vai automatizar workflows inteiros e para quem o custo por token é irrelevante perto do ganho de eficiência.</p>
+
+    <blockquote>
+      "Não estamos mais vendendo um modelo de chat. Estamos vendendo um agente." — a mensagem implícita de todo o lançamento do GPT-5.5.
+    </blockquote>
+
+    <h2 id="faz-diferenca">Faz diferença para você?</h2>
+
+    <p><strong>Se você usa o ChatGPT no plano Plus (US$ 20/mês):</strong> sim, o modelo padrão vai melhorar. Tarefas longas e complexas devem ter resultados mais consistentes. Não precisa fazer nada — a atualização é automática.</p>
+
+    <p><strong>Se você usa a API para construir produtos:</strong> avalie o custo com cuidado antes de migrar para o 5.5. O nível padrão (US$ 5/M input, US$ 30/M output) é competitivo. O Pro é caro e só faz sentido para casos muito específicos de automação de alto valor.</p>
+
+    <p><strong>Se você está avaliando entre ChatGPT e Claude para uso profissional:</strong> o GPT-5.5 reforça o ChatGPT para tarefas agênticas e automação. O Claude continua sendo a escolha mais forte para análise de documentos longos, escrita técnica e raciocínio encadeado complexo. São complementares, não substitutos.</p>
+
+    <p><strong>Se você usa o plano gratuito:</strong> nada muda por enquanto. O GPT-5.4 mini continua disponível sem custo.</p>
+
+  </div>
+
+  <!-- CTA AFILIADO -->
+  <!-- AFILIADO: substituir href="#" pelos links reais quando disponíveis -->
+  <div class="article-cta">
+    <div class="article-cta-label">Quer testar agora?</div>
+    <div class="article-cta-title">GPT-5.5 disponível hoje nos planos pagos.</div>
+    <p class="article-cta-text">Se você já assina o ChatGPT Plus, o modelo já está disponível automaticamente. Se ainda não assina, os três modelos abaixo têm planos gratuitos para começar.</p>
+    <div class="article-cta-tools">
+      <div class="cta-tool-card">
+        <div class="cta-tool-icon">🤖</div>
+        <div class="cta-tool-name">ChatGPT</div>
+        <div class="cta-tool-tag">GPT-5.5 · Plus US$ 20/mês</div>
+        <a href="#" class="cta-tool-btn placeholder" rel="sponsored nofollow noopener" target="_blank">Testar →</a>
+      </div>
+      <div class="cta-tool-card">
+        <div class="cta-tool-icon">🧠</div>
+        <div class="cta-tool-name">Claude</div>
+        <div class="cta-tool-tag">Anthropic · Alternativa ao GPT</div>
+        <a href="#" class="cta-tool-btn placeholder" rel="sponsored nofollow noopener" target="_blank">Testar →</a>
+      </div>
+      <div class="cta-tool-card">
+        <div class="cta-tool-icon">✨</div>
+        <div class="cta-tool-name">Gemini</div>
+        <div class="cta-tool-tag">Google · Grátis com mais recursos</div>
+        <a href="#" class="cta-tool-btn placeholder" rel="sponsored nofollow noopener" target="_blank">Testar →</a>
+      </div>
+    </div>
+    <p class="article-cta-footer">* Links de parceiros. Você não paga nada a mais — e ajuda o IAnova a continuar gratuito.</p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq" id="faq">
+    <div class="faq-title">Perguntas frequentes</div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        O que é o GPT-5.5?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-a">GPT-5.5 é o mais recente modelo da OpenAI, lançado em 23 de abril de 2026. Substitui o GPT-5.4 como padrão nos planos pagos do ChatGPT. O foco principal é em tarefas agênticas — o modelo consegue planejar, usar ferramentas, corrigir erros e completar tarefas complexas com pouca supervisão humana.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Quanto custa o GPT-5.5?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-a">Na API: US$ 5 por milhão de tokens de entrada e US$ 30 por milhão de saída no nível padrão. O GPT-5.5 Pro custa US$ 30 de input e US$ 180 de output — significativamente mais caro que concorrentes. No ChatGPT, está incluído no plano Plus (US$ 20/mês) e acima.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        GPT-5.5 está disponível no plano gratuito?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-a">Não. O GPT-5.5 é exclusivo para assinantes pagos (Plus, Pro, Business e Enterprise). Usuários gratuitos continuam com o GPT-5.4 mini, que já é um modelo capaz para uso diário básico.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Qual a diferença entre GPT-5.5 e GPT-5.4?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-a">O GPT-5.5 é mais rápido e mais eficiente por token. A principal diferença é de posicionamento: enquanto o 5.4 focou em qualidade de raciocínio e redução de erros, o 5.5 é posicionado como um agente — capaz de completar tarefas complexas de múltiplos passos com pouca supervisão. É uma mudança de produto, não só de modelo.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        O GPT-5.5 é melhor que o Claude?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-a">Depende do uso. Para tarefas agênticas e automação de workflows, o GPT-5.5 é a proposta mais forte da OpenAI até agora. Para análise de documentos longos, escrita técnica e raciocínio encadeado, o Claude Opus 4.5 ainda é referência. Os benchmarks da OpenAI mostram o 5.5 à frente, mas são benchmarks próprios — a comparação real varia muito por tipo de tarefa.</div>
+    </div>
+  </div>
+
+  <div class="article-footer">
+    <div class="af-tags">
+      <a href="#" class="af-tag">#GPT5.5</a>
+      <a href="#" class="af-tag">#OpenAI</a>
+      <a href="#" class="af-tag">#ChatGPT</a>
+      <a href="#" class="af-tag">#IAAgêntica</a>
+      <a href="#" class="af-tag">#Lançamento</a>
+      <a href="#" class="af-tag">#Notícias</a>
+    </div>
+    <div class="share-row">
+      <span class="share-label">Compartilhar:</span>
+      <button class="share-btn" onclick="window.open('https://twitter.com/intent/tweet?text=GPT-5.5 foi lançado hoje — análise completa no IAnova&url='+location.href,'_blank')">Twitter/X</button>
+      <button class="share-btn" onclick="window.open('https://wa.me/?text=GPT-5.5 lançado hoje — análise IAnova: '+location.href,'_blank')">WhatsApp</button>
+      <button class="share-btn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+location.href,'_blank')">LinkedIn</button>
+      <button class="share-btn" onclick="navigator.clipboard.writeText(location.href);this.textContent='✓ Copiado!'">Copiar link</button>
+    </div>
+  </div>
+
+</article>
+
+<!-- SIDEBAR -->
+<aside class="sticky-sidebar">
+  <div class="sidebar-widget" style="border-color:rgba(255,85,85,.25);background:rgba(255,85,85,.03);">
+    <div class="widget-title" style="color:var(--red);">⚡ Atualização ao vivo</div>
+    <p style="font-size:.78rem;color:var(--muted);line-height:1.6;">Publicado em 23 abr 2026 às 18h. Artigo será atualizado conforme novos detalhes forem confirmados.</p>
+  </div>
+
+  <div class="sidebar-widget">
+    <div class="widget-title">Neste artigo</div>
+    <div class="toc-sidebar">
+      <a href="#o-que-e">O que é</a>
+      <a href="#capacidades">O que faz de novo</a>
+      <a href="#preco">Preço e planos</a>
+      <a href="#linha-do-tempo">Linha do tempo</a>
+      <a href="#vs-concorrentes">vs Claude e Gemini</a>
+      <a href="#o-que-nao-dizem">O que não dizem</a>
+      <a href="#faz-diferenca">Faz diferença para você?</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+
+  <!-- WIDGET AFILIADO — SIDEBAR -->
+  <!-- AFILIADO: substituir href="#" pelos links reais quando disponíveis -->
+  <div class="sidebar-widget affiliate-widget">
+    <div class="widget-title">🔗 Experimente grátis</div>
+    <div class="aff-tool">
+      <div class="aff-tool-info">
+        <div class="aff-tool-name">ChatGPT</div>
+        <div class="aff-tool-desc">GPT-5.5 · Plus US$ 20/mês</div>
+      </div>
+      <a href="#" class="btn-try placeholder" rel="sponsored nofollow noopener" target="_blank">Testar</a>
+    </div>
+    <div class="aff-tool">
+      <div class="aff-tool-info">
+        <div class="aff-tool-name">Claude</div>
+        <div class="aff-tool-desc">Anthropic · Plano gratuito</div>
+      </div>
+      <a href="#" class="btn-try placeholder" rel="sponsored nofollow noopener" target="_blank">Testar</a>
+    </div>
+    <div class="aff-tool">
+      <div class="aff-tool-info">
+        <div class="aff-tool-name">Gemini</div>
+        <div class="aff-tool-desc">Google · Plano gratuito</div>
+      </div>
+      <a href="#" class="btn-try placeholder" rel="sponsored nofollow noopener" target="_blank">Testar</a>
+    </div>
+    <p class="aff-disclaimer">Links de parceiros. Sem custo extra para você.</p>
+  </div>
+
+  <div class="sidebar-widget">
+    <div class="widget-title">Newsletter IAnova</div>
+    <p style="font-size:.8rem;color:var(--muted);margin-bottom:.85rem;line-height:1.5;">Receba novidades como essa antes de todo mundo. Grátis.</p>
+    <input style="width:100%;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.6rem .8rem;color:var(--text);font-size:.8rem;outline:none;margin-bottom:.5rem;font-family:var(--fbody);" placeholder="seu@email.com" type="email" />
+    <button style="width:100%;background:var(--accent);color:#000;border:none;border-radius:6px;padding:.65rem;font-weight:600;font-size:.8rem;cursor:pointer;font-family:var(--fbody);">Quero receber</button>
+  </div>
+
+  <div class="sidebar-widget">
+    <div class="widget-title">Leia também</div>
+    <a href="chatgpt-vs-gemini-vs-claude-2026.html" style="display:block;font-size:.82rem;color:var(--muted);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--border);transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">
+      → ChatGPT vs Gemini vs Claude 2026
+    </a>
+    <a href="ias-gratuitas-2026.html" style="display:block;font-size:.82rem;color:var(--muted);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--border);transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">
+      → 10 melhores IAs gratuitas 2026
+    </a>
+    <a href="como-usar-ia-para-trabalhar-mais-rapido.html" style="display:block;font-size:.82rem;color:var(--muted);text-decoration:none;padding:.5rem 0;transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">
+      → Como usar IA para trabalhar mais rápido
+    </a>
+  </div>
+</aside>
+</div>
+
+<!-- RELATED -->
+<div class="related">
+  <div class="related-title">Leia também</div>
+  <div class="related-grid">
+    <a href="chatgpt-vs-gemini-vs-claude-2026.html" class="related-card">
+      <div class="rc-cat">Comparativo</div>
+      <div class="rc-title">ChatGPT vs Gemini vs Claude: qual IA usar em 2026?</div>
+      <div class="rc-meta">Atualizado · 23 abr 2026</div>
+    </a>
+    <a href="ias-gratuitas-2026.html" class="related-card">
+      <div class="rc-cat">Ferramentas</div>
+      <div class="rc-title">10 melhores IAs gratuitas para usar agora</div>
+      <div class="rc-meta">10 min · 20 abr 2026</div>
+    </a>
+    <a href="como-usar-ia-para-trabalhar-mais-rapido.html" class="related-card">
+      <div class="rc-cat">Tutorial</div>
+      <div class="rc-title">Como usar IA para trabalhar mais rápido em 2026</div>
+      <div class="rc-meta">11 min · 23 abr 2026</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">IAnova <span class="logo-badge">BETA</span></a>
+      <p>O portal brasileiro de inteligência artificial, curado por <strong style="color:var(--text)">Rômulo Labre</strong> — Engenheiro de Controle e Automação.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Conteúdo</h4>
+      <a href="chatgpt-vs-gemini-vs-claude-2026.html">Comparativos</a>
+      <a href="o-que-e-inteligencia-artificial.html">Tutoriais</a>
+      <a href="ferramentas.html">Ferramentas</a>
+      <a href="#">Notícias</a>
+    </div>
+    <div class="footer-col">
+      <h4>IAs</h4>
+      <a href="#">ChatGPT</a>
+      <a href="#">Gemini</a>
+      <a href="#">Claude</a>
+      <a href="#">Open Source</a>
+    </div>
+    <div class="footer-col">
+      <h4>IAnova</h4>
+      <a href="sobre.html">Sobre</a>
+      <a href="index.html#newsletter">Newsletter</a>
+      <a href="#">Anuncie</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 IAnova · Curado por <strong style="color:var(--text)">Rômulo Labre</strong></span>
+    <span>Feito com IA, curado por engenheiro</span>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const d = document.documentElement;
+    const p = (d.scrollTop / (d.scrollHeight - d.clientHeight)) * 100;
+    document.getElementById('progress').style.width = p + '%';
+  });
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+  const headings = document.querySelectorAll('.prose h2[id]');
+  const tocLinks = document.querySelectorAll('.toc-sidebar a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    headings.forEach(h => { if (window.scrollY >= h.offsetTop - 120) cur = h.id; });
+    tocLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+  });
+  function toggleMenu() {
+    var nav = document.getElementById('mobileNav');
+    var bd = document.getElementById('navBackdrop');
+    var open = nav.classList.toggle('open');
+    bd.classList.toggle('open', open);
+  }
+  function closeMenu() {
+    document.getElementById('mobileNav').classList.remove('open');
+    document.getElementById('navBackdrop').classList.remove('open');
+  }
+  window.addEventListener('scroll', closeMenu, { passive: true });
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('#mobileNav a').forEach(function(a) {
+      a.addEventListener('click', closeMenu);
+    });
+  });
+</script>
+</body>
+</html>

@@ -28,8 +28,23 @@
 
   <!-- ARTIGOS -->
   <url>
+    <loc>https://ianova.ia.br/noticias/gpt-5-5-openai-lancamento-abril-2026</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <news:news>
+      <news:publication>
+        <news:name>IAnova</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-23</news:publication_date>
+      <news:title>GPT-5.5: O que é, o que muda e o que a OpenAI não está dizendo</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://ianova.ia.br/comparativo/chatgpt-vs-gemini-vs-claude-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <news:news>
