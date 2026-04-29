@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#bf5fff"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00e5ff"/>
+      <stop offset="33%"  stop-color="#bf5fff"/>
+      <stop offset="66%"  stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <clipPath id="innerClip">
+      <circle cx="100" cy="100" r="89"/>
+    </clipPath>
+  </defs>
+
+  <!-- Anel colorido (círculo maior com gradiente) -->
+  <circle cx="100" cy="100" r="99" fill="url(#ringGrad)"/>
+
+  <!-- Círculo principal cortado pelo clipPath — sem círculo preto -->
+  <circle cx="100" cy="100" r="99" fill="url(#circleGrad)" clip-path="url(#innerClip)"/>
+
+  <!-- IA grande + nova menor, baseline alinhados -->
+  <text text-anchor="middle" x="100" y="122"
+    font-family="Syne, Arial Black, sans-serif"
+    fill="#000000">
+    <tspan font-size="72" font-weight="800" letter-spacing="-2" baseline-shift="0">IA</tspan><tspan font-size="38" font-weight="700" opacity="0.72" letter-spacing="-1" baseline-shift="0">nova</tspan>
+  </text>
+</svg>
