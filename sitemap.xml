@@ -4,15 +4,15 @@
 
   <!-- HOME -->
   <url>
-    <loc>https://ianova.ia.br/</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://ianova.ia.br/index.html</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- SOBRE -->
   <url>
-    <loc>https://ianova.ia.br/sobre</loc>
+    <loc>https://ianova.ia.br/sobre.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -20,7 +20,7 @@
 
   <!-- FERRAMENTAS -->
   <url>
-    <loc>https://ianova.ia.br/ferramentas</loc>
+    <loc>https://ianova.ia.br/ferramentas.html</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -28,7 +28,7 @@
 
   <!-- ARTIGOS -->
   <url>
-    <loc>https://ianova.ia.br/noticias/gpt-5-5-openai-lancamento-abril-2026</loc>
+    <loc>https://ianova.ia.br/gpt-5-5-openai-lancamento-abril-2026.html</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -43,7 +43,7 @@
   </url>
 
   <url>
-    <loc>https://ianova.ia.br/comparativo/chatgpt-vs-gemini-vs-claude-2026</loc>
+    <loc>https://ianova.ia.br/chatgpt-vs-gemini-vs-claude-2026.html</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -58,7 +58,7 @@
   </url>
 
   <url>
-    <loc>https://ianova.ia.br/comparativo/melhores-ias-gratuitas-2026</loc>
+    <loc>https://ianova.ia.br/ias-gratuitas-2026.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -73,23 +73,8 @@
   </url>
 
   <url>
-    <loc>https://ianova.ia.br/tutorial/gpt-5-5-openai-lancamento-abril-2026</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <news:news>
-      <news:publication>
-        <news:name>IAnova</news:name>
-        <news:language>pt</news:language>
-      </news:publication>
-      <news:publication_date>2026-04-29</news:publication_date>
-      <news:title>OpenAI lança nova versão ChatGPT 5.5</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://ianova.ia.br/tutorial/ia-para-advogados-brasil-2026</loc>
-    <lastmod>2026-05-01</lastmod>
+    <loc>https://ianova.ia.br/o-que-e-inteligencia-artificial.html</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <news:news>
@@ -97,13 +82,28 @@
         <news:name>IAnova</news:name>
         <news:language>pt</news:language>
       </news:publication>
-      <news:publication_date>2026-05-01</news:publication_date>
-      <news:title>IA para Advogados: Guia Completo 2026</news:title>
+      <news:publication_date>2026-04-20</news:publication_date>
+      <news:title>O que é Inteligência Artificial? Guia completo 2026</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://ianova.ia.br/comparativo/melhores-ias-para-criar-imagens-2026</loc>
+    <loc>https://ianova.ia.br/como-usar-ia-para-trabalhar-mais-rapido.html</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>IAnova</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-23</news:publication_date>
+      <news:title>Como usar IA para trabalhar mais rápido em 2026</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://ianova.ia.br/melhores-ias-para-criar-imagens-2026.html</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -118,7 +118,7 @@
   </url>
 
   <url>
-    <loc>https://ianova.ia.br/especialidades/ia-para-advogados-brasil-2026</loc>
+    <loc>https://ianova.ia.br/ia-para-advogados-brasil-2026.html</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -133,30 +133,18 @@
   </url>
 
   <url>
-    <loc>https://ianova.ia.br/especialidades/</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- CATEGORIAS -->
-  <url>
-    <loc>https://ianova.ia.br/comparativos/</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ianova.ia.br/tutoriais/</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ianova.ia.br/noticias/</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
+    <loc>https://ianova.ia.br/ia-para-estudar-guia-completo-2026.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>IAnova</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-03</news:publication_date>
+      <news:title>IA para Estudar: Guia Completo 2026 — ENEM, Concursos e Faculdade</news:title>
+    </news:news>
   </url>
 
 </urlset>
