@@ -5,7 +5,7 @@
   <!-- HOME -->
   <url>
     <loc>https://ianova.ia.br/index.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,7 +21,7 @@
   <!-- FERRAMENTAS -->
   <url>
     <loc>https://ianova.ia.br/ferramentas.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -59,7 +59,7 @@
 
   <url>
     <loc>https://ianova.ia.br/ias-gratuitas-2026.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -74,7 +74,7 @@
 
   <url>
     <loc>https://ianova.ia.br/o-que-e-inteligencia-artificial.html</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <news:news>
@@ -119,7 +119,7 @@
 
   <url>
     <loc>https://ianova.ia.br/ia-para-advogados-brasil-2026.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -128,7 +128,7 @@
         <news:language>pt</news:language>
       </news:publication>
       <news:publication_date>2026-04-29</news:publication_date>
-      <news:title>IA para Advogados: Guia Completo 2026</news:title>
+      <news:title>Melhores ferramentas de IA para Advogados no Brasil (2026)</news:title>
     </news:news>
   </url>
 
